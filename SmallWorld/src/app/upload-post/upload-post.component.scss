@@ -1,0 +1,94 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 15px; 
+    text-align: center;
+    justify-content: center;
+}
+::ng-deep .mat-card{
+    margin-top: 15px !important;
+}
+.mat-card{
+    padding: 0;
+}
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+  form{
+      padding:  5%;
+  }
+ 
+  .title-text{
+    padding-bottom: 7%;
+    background-color:#3f51b5;
+    padding: 4%;
+    color: white;
+    font-size: larger;
+  }
+
+  ::ng-deep .mat-select-arrow{
+    border-top: none !important;
+  }
+  .icon-phone{
+    font-size: 115%;
+  }
+  ::ng-deep input.country-search{
+    padding:0 0 0 9% !important;
+    width: 90%;
+  }
+  ::ng-deep .form-field
+  // .mat-form-field-appearance-legacy .mat-form-field-wrapper
+  {
+      width: 500px !important;
+  }
+  ::ng-deep .mat-tab-labels{
+    justify-content: center !important;
+  }
+  ::ng-deep  .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-datepicker-toggle-default-icon{
+    color: black !important;
+}
+.error{
+  color: red;
+}
+button{
+    outline: none;
+}
+
+::ng-deep .ng5-slider.animate .ng5-slider-pointer {
+  background-color: gray !important;
+}
+
+::ng-deep .ng5-slider.animate .ng5-slider-selection {
+  background-color: gray !important;
+}
+::ng-deep .ng5-slider .ng5-slider-pointer.ng5-slider-active:after{
+  background-color: #3f51b5 !important;
+}
+
+.p{
+  width:500px;
+  margin:auto;
+  color:gray;
+  text-align:left;
+}
+ng5-slider{
+  margin-top:10%;
+  margin-bottom:10%;
+}
+::ng-deep .location{
+  width: 150px !important;
+  margin: 1.5%;
+}

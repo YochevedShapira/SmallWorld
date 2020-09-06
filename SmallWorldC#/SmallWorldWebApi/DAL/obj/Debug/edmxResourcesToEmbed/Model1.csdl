@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="YMprojectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressId" />
+    </Key>
+    <Property Name="AddressId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Suggestions" Relationship="Self.FK__Suggestio__Adres__37A5467C" FromRole="Address" ToRole="Suggestions" />
+  </EntityType>
+  <EntityType Name="ageRange">
+    <Key>
+      <PropertyRef Name="ageRangeID" />
+    </Key>
+    <Property Name="ageRangeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="age_min" Type="Int32" Nullable="false" />
+    <Property Name="age_max" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Suggestions" Relationship="Self.FK__Suggestio__ageRa__38996AB5" FromRole="ageRange" ToRole="Suggestions" />
+  </EntityType>
+  <EntityType Name="Host">
+    <Key>
+      <PropertyRef Name="HostID" />
+    </Key>
+    <Property Name="HostID" Type="Int32" Nullable="false" />
+    <Property Name="HostName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="HostEmail" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HostTel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HostTextDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Hosts__HostID__29572725" FromRole="Hosts" ToRole="Users" />
+    <NavigationProperty Name="Suggestions" Relationship="Self.FK__Suggestio__hostI__3A81B327" FromRole="Hosts" ToRole="Suggestions" />
+  </EntityType>
+  <EntityType Name="HoursRange">
+    <Key>
+      <PropertyRef Name="hoursRangeID" />
+    </Key>
+    <Property Name="hoursRangeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="hours_start" Type="Int32" Nullable="false" />
+    <Property Name="hours_end" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Suggestions" Relationship="Self.FK__Suggestio__hours__398D8EEE" FromRole="HoursRange" ToRole="Suggestions" />
+  </EntityType>
+  <EntityType Name="ServiceTypeList">
+    <Key>
+      <PropertyRef Name="ServiceTypeListID" />
+    </Key>
+    <Property Name="ServiceTypeListID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ServiceTypesToSuggestions" Relationship="Self.FK__ServiceTy__Servi__3D5E1FD2" FromRole="ServiceTypeList" ToRole="ServiceTypesToSuggestions" />
+  </EntityType>
+  <EntityType Name="ServiceTypesToSuggestion">
+    <Key>
+      <PropertyRef Name="ServiceTypeToSuggestionID" />
+    </Key>
+    <Property Name="ServiceTypeToSuggestionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceTypeListID" Type="Int32" Nullable="false" />
+    <Property Name="SuggestionID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ServiceTypeList" Relationship="Self.FK__ServiceTy__Servi__3D5E1FD2" FromRole="ServiceTypesToSuggestions" ToRole="ServiceTypeList" />
+    <NavigationProperty Name="Suggestion" Relationship="Self.FK__ServiceTy__Sugge__3E52440B" FromRole="ServiceTypesToSuggestions" ToRole="Suggestions" />
+  </EntityType>
+  <EntityType Name="Suggestion">
+    <Key>
+      <PropertyRef Name="SuggestionID" />
+    </Key>
+    <Property Name="SuggestionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SuggestionTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SuggestionDescreotion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AdressId" Type="Int32" Nullable="false" />
+    <Property Name="ageRangeID" Type="Int32" />
+    <Property Name="hoursRangeID" Type="Int32" />
+    <Property Name="hostId" Type="Int32" Nullable="false" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Address" Relationship="Self.FK__Suggestio__Adres__37A5467C" FromRole="Suggestions" ToRole="Address" />
+    <NavigationProperty Name="ageRange" Relationship="Self.FK__Suggestio__ageRa__38996AB5" FromRole="Suggestions" ToRole="ageRange" />
+    <NavigationProperty Name="Host" Relationship="Self.FK__Suggestio__hostI__3A81B327" FromRole="Suggestions" ToRole="Hosts" />
+    <NavigationProperty Name="HoursRange" Relationship="Self.FK__Suggestio__hours__398D8EEE" FromRole="Suggestions" ToRole="HoursRange" />
+    <NavigationProperty Name="ServiceTypesToSuggestions" Relationship="Self.FK__ServiceTy__Sugge__3E52440B" FromRole="Suggestions" ToRole="ServiceTypesToSuggestions" />
+  </EntityType>
+  <EntityType Name="Traveler">
+    <Key>
+      <PropertyRef Name="TravelerID" />
+    </Key>
+    <Property Name="TravelerID" Type="Int32" Nullable="false" />
+    <Property Name="TravelerName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Travelers__Trave__267ABA7A" FromRole="Travelers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Host" Relationship="Self.FK__Hosts__HostID__29572725" FromRole="Users" ToRole="Hosts" />
+    <NavigationProperty Name="Traveler" Relationship="Self.FK__Travelers__Trave__267ABA7A" FromRole="Users" ToRole="Travelers" />
+  </EntityType>
+  <Association Name="FK__Suggestio__Adres__37A5467C">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="Suggestions" Type="Self.Suggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="Suggestions">
+        <PropertyRef Name="AdressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Suggestio__ageRa__38996AB5">
+    <End Role="ageRange" Type="Self.ageRange" Multiplicity="0..1" />
+    <End Role="Suggestions" Type="Self.Suggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ageRange">
+        <PropertyRef Name="ageRangeID" />
+      </Principal>
+      <Dependent Role="Suggestions">
+        <PropertyRef Name="ageRangeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Hosts__HostID__29572725">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Hosts" Type="Self.Host" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Hosts">
+        <PropertyRef Name="HostID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Suggestio__hostI__3A81B327">
+    <End Role="Hosts" Type="Self.Host" Multiplicity="1" />
+    <End Role="Suggestions" Type="Self.Suggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hosts">
+        <PropertyRef Name="HostID" />
+      </Principal>
+      <Dependent Role="Suggestions">
+        <PropertyRef Name="hostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Suggestio__hours__398D8EEE">
+    <End Role="HoursRange" Type="Self.HoursRange" Multiplicity="0..1" />
+    <End Role="Suggestions" Type="Self.Suggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoursRange">
+        <PropertyRef Name="hoursRangeID" />
+      </Principal>
+      <Dependent Role="Suggestions">
+        <PropertyRef Name="hoursRangeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiceTy__Servi__3D5E1FD2">
+    <End Role="ServiceTypeList" Type="Self.ServiceTypeList" Multiplicity="1" />
+    <End Role="ServiceTypesToSuggestions" Type="Self.ServiceTypesToSuggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceTypeList">
+        <PropertyRef Name="ServiceTypeListID" />
+      </Principal>
+      <Dependent Role="ServiceTypesToSuggestions">
+        <PropertyRef Name="ServiceTypeListID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiceTy__Sugge__3E52440B">
+    <End Role="Suggestions" Type="Self.Suggestion" Multiplicity="1" />
+    <End Role="ServiceTypesToSuggestions" Type="Self.ServiceTypesToSuggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suggestions">
+        <PropertyRef Name="SuggestionID" />
+      </Principal>
+      <Dependent Role="ServiceTypesToSuggestions">
+        <PropertyRef Name="SuggestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Travelers__Trave__267ABA7A">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Travelers" Type="Self.Traveler" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Travelers">
+        <PropertyRef Name="TravelerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="YMprojectEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addresses" EntityType="Self.Address" />
+    <EntitySet Name="ageRanges" EntityType="Self.ageRange" />
+    <EntitySet Name="Hosts" EntityType="Self.Host" />
+    <EntitySet Name="HoursRanges" EntityType="Self.HoursRange" />
+    <EntitySet Name="ServiceTypeLists" EntityType="Self.ServiceTypeList" />
+    <EntitySet Name="ServiceTypesToSuggestions" EntityType="Self.ServiceTypesToSuggestion" />
+    <EntitySet Name="Suggestions" EntityType="Self.Suggestion" />
+    <EntitySet Name="Travelers" EntityType="Self.Traveler" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK__Suggestio__Adres__37A5467C" Association="Self.FK__Suggestio__Adres__37A5467C">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="Suggestions" EntitySet="Suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Suggestio__ageRa__38996AB5" Association="Self.FK__Suggestio__ageRa__38996AB5">
+      <End Role="ageRange" EntitySet="ageRanges" />
+      <End Role="Suggestions" EntitySet="Suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Hosts__HostID__29572725" Association="Self.FK__Hosts__HostID__29572725">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Hosts" EntitySet="Hosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Suggestio__hostI__3A81B327" Association="Self.FK__Suggestio__hostI__3A81B327">
+      <End Role="Hosts" EntitySet="Hosts" />
+      <End Role="Suggestions" EntitySet="Suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Suggestio__hours__398D8EEE" Association="Self.FK__Suggestio__hours__398D8EEE">
+      <End Role="HoursRange" EntitySet="HoursRanges" />
+      <End Role="Suggestions" EntitySet="Suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiceTy__Servi__3D5E1FD2" Association="Self.FK__ServiceTy__Servi__3D5E1FD2">
+      <End Role="ServiceTypeList" EntitySet="ServiceTypeLists" />
+      <End Role="ServiceTypesToSuggestions" EntitySet="ServiceTypesToSuggestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiceTy__Sugge__3E52440B" Association="Self.FK__ServiceTy__Sugge__3E52440B">
+      <End Role="Suggestions" EntitySet="Suggestions" />
+      <End Role="ServiceTypesToSuggestions" EntitySet="ServiceTypesToSuggestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Travelers__Trave__267ABA7A" Association="Self.FK__Travelers__Trave__267ABA7A">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Travelers" EntitySet="Travelers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

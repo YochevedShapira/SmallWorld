@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="243363c2abe744278d63f279747acbfa" Name="Diagram1">
+        <EntityTypeShape EntityType="YMprojectModel.Address" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="YMprojectModel.ageRange" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="YMprojectModel.Host" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="YMprojectModel.HoursRange" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="YMprojectModel.ServiceTypeList" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YMprojectModel.ServiceTypesToSuggestion" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="YMprojectModel.Suggestion" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YMprojectModel.Traveler" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="YMprojectModel.User" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="YMprojectModel.FK__Suggestio__Adres__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="YMprojectModel.FK__Suggestio__ageRa__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="YMprojectModel.FK__Hosts__HostID__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="YMprojectModel.FK__Suggestio__hostI__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="YMprojectModel.FK__Suggestio__hours__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="YMprojectModel.FK__ServiceTy__Servi__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="YMprojectModel.FK__ServiceTy__Sugge__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="YMprojectModel.FK__Travelers__Trave__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

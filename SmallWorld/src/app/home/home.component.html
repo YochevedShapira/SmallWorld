@@ -1,0 +1,21 @@
+<h1>Hello SmallWorld</h1>
+<div class="div">
+
+    <button class="logout" *ngIf="authService.token()" mat-flat-button color="primary"
+        (click)="authService.logout()">Logout</button>
+
+    <div *ngFor="let user of users">
+        <span> {{user.HostName}}</span>
+        <button (click)="delete(user.HostID)" mat-icon-button color="primary"
+            aria-label="Example icon button with a home icon">
+            <mat-icon>delete</mat-icon>
+        </button>
+        <mat-form-field class="example-form-field">
+            <mat-label>edit name</mat-label>
+            <input matInput type="text" [(ngModel)]="user.HostName">
+        </mat-form-field>
+        <button (click)="edit(user)" mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+            <mat-icon>edit</mat-icon>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="YMprojectModelStoreContainer" CdmEntityContainer="YMprojectEntities">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="YMprojectModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="street" ColumnName="street" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BooleanSelectedValues">
+      <EntityTypeMapping TypeName="YMprojectModel.BooleanSelectedValue">
+        <MappingFragment StoreEntitySet="BooleanSelectedValues">
+          <ScalarProperty Name="PrameterID" ColumnName="PrameterID" />
+          <ScalarProperty Name="SelctedValue" ColumnName="SelctedValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hosts">
+      <EntityTypeMapping TypeName="YMprojectModel.Host">
+        <MappingFragment StoreEntitySet="Hosts">
+          <ScalarProperty Name="HostID" ColumnName="HostID" />
+          <ScalarProperty Name="HostName" ColumnName="HostName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="HostEmail" ColumnName="HostEmail" />
+          <ScalarProperty Name="HostTel" ColumnName="HostTel" />
+          <ScalarProperty Name="HostTextDetails" ColumnName="HostTextDetails" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocationHosts">
+      <EntityTypeMapping TypeName="YMprojectModel.LocationHost">
+        <MappingFragment StoreEntitySet="LocationHost">
+          <ScalarProperty Name="LocationHostID" ColumnName="LocationHostID" />
+          <ScalarProperty Name="HostID" ColumnName="HostID" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NumericSelectedValues">
+      <EntityTypeMapping TypeName="YMprojectModel.NumericSelectedValue">
+        <MappingFragment StoreEntitySet="NumericSelectedValues">
+          <ScalarProperty Name="PrameterID" ColumnName="PrameterID" />
+          <ScalarProperty Name="SelctedValue" ColumnName="SelctedValue" />
+          <ScalarProperty Name="RequiredRatio" ColumnName="RequiredRatio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParameterSelectedValues">
+      <EntityTypeMapping TypeName="YMprojectModel.ParameterSelectedValue">
+        <MappingFragment StoreEntitySet="ParameterSelectedValues">
+          <ScalarProperty Name="PrameterValueID" ColumnName="PrameterValueID" />
+          <ScalarProperty Name="PrameterTypeID" ColumnName="PrameterTypeID" />
+          <ScalarProperty Name="Optional" ColumnName="Optional" />
+          <ScalarProperty Name="SuggestionID" ColumnName="SuggestionID" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParameterTypes">
+      <EntityTypeMapping TypeName="YMprojectModel.ParameterType">
+        <MappingFragment StoreEntitySet="ParameterTypes">
+          <ScalarProperty Name="ParameterTypeID" ColumnName="ParameterTypeID" />
+          <ScalarProperty Name="ParameterName" ColumnName="ParameterName" />
+          <ScalarProperty Name="ParameterDataType" ColumnName="ParameterDataType" />
+          <ScalarProperty Name="Optional" ColumnName="Optional" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requests">
+      <EntityTypeMapping TypeName="YMprojectModel.Request">
+        <MappingFragment StoreEntitySet="Requests">
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="TravelerID" ColumnName="TravelerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SelectOptions">
+      <EntityTypeMapping TypeName="YMprojectModel.SelectOption">
+        <MappingFragment StoreEntitySet="SelectOptions">
+          <ScalarProperty Name="OptionId" ColumnName="OptionId" />
+          <ScalarProperty Name="OptionName" ColumnName="OptionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTypes">
+      <EntityTypeMapping TypeName="YMprojectModel.ServiceType">
+        <MappingFragment StoreEntitySet="ServiceType">
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="SuggestionID" ColumnName="SuggestionID" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stops">
+      <EntityTypeMapping TypeName="YMprojectModel.Stop">
+        <MappingFragment StoreEntitySet="Stops">
+          <ScalarProperty Name="StopId" ColumnName="StopId" />
+          <ScalarProperty Name="StopLocation" ColumnName="StopLocation" />
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="HostLocationId" ColumnName="HostLocationId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="ServiceTypeId" ColumnName="ServiceTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suggestions">
+      <EntityTypeMapping TypeName="YMprojectModel.Suggestion">
+        <MappingFragment StoreEntitySet="Suggestions">
+          <ScalarProperty Name="SuggestionID" ColumnName="SuggestionID" />
+          <ScalarProperty Name="LocationHostID" ColumnName="LocationHostID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Travelers">
+      <EntityTypeMapping TypeName="YMprojectModel.Traveler">
+        <MappingFragment StoreEntitySet="Travelers">
+          <ScalarProperty Name="TravelerID" ColumnName="TravelerID" />
+          <ScalarProperty Name="TravelerName" ColumnName="TravelerName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ListSelectedValues" TypeName="YMprojectModel.ListSelectedValues" StoreEntitySet="ListSelectedValues">
+      <EndProperty Name="ParameterSelectedValues">
+        <ScalarProperty Name="PrameterValueID" ColumnName="PrameterID" />
+      </EndProperty>
+      <EndProperty Name="SelectOptions">
+        <ScalarProperty Name="OptionId" ColumnName="SelectedValueId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="YMprojectModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

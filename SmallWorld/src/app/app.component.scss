@@ -1,0 +1,15 @@
+mat-grid-list{
+    width: 100% !important; 
+ }
+ ::ng-deep .mat-grid-tile .mat-figure{
+ justify-content: right !important;
+ }
+ .search{
+     width: calc(100% - 16px);
+ }
+ button{
+     margin: 4px;
+ }
+ .img-logo{
+     width :100%;
+ }

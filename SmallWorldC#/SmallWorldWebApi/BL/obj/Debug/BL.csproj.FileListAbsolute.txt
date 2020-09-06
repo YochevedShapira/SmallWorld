@@ -1,0 +1,56 @@
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll.config
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll.config
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll.config
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csprojAssemblyReference.cache
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CopyComplete
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\BL.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DAL.dll.config
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\DTO.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\BL\obj\Debug\BL.pdb

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="YMprojectModelStoreContainer" CdmEntityContainer="YMprojectEntities1">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="YMprojectModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="street" ColumnName="street" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ageRanges">
+      <EntityTypeMapping TypeName="YMprojectModel.ageRange">
+        <MappingFragment StoreEntitySet="ageRange">
+          <ScalarProperty Name="ageRangeID" ColumnName="ageRangeID" />
+          <ScalarProperty Name="age_min" ColumnName="age_min" />
+          <ScalarProperty Name="age_max" ColumnName="age_max" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hosts">
+      <EntityTypeMapping TypeName="YMprojectModel.Host">
+        <MappingFragment StoreEntitySet="Hosts">
+          <ScalarProperty Name="HostID" ColumnName="HostID" />
+          <ScalarProperty Name="HostName" ColumnName="HostName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="HostEmail" ColumnName="HostEmail" />
+          <ScalarProperty Name="HostTel" ColumnName="HostTel" />
+          <ScalarProperty Name="HostTextDetails" ColumnName="HostTextDetails" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoursRanges">
+      <EntityTypeMapping TypeName="YMprojectModel.HoursRange">
+        <MappingFragment StoreEntitySet="HoursRange">
+          <ScalarProperty Name="hoursRangeID" ColumnName="hoursRangeID" />
+          <ScalarProperty Name="hours_start" ColumnName="hours_start" />
+          <ScalarProperty Name="hours_end" ColumnName="hours_end" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTypeLists">
+      <EntityTypeMapping TypeName="YMprojectModel.ServiceTypeList">
+        <MappingFragment StoreEntitySet="ServiceTypeList">
+          <ScalarProperty Name="ServiceTypeListID" ColumnName="ServiceTypeListID" />
+          <ScalarProperty Name="ServiceTypeName" ColumnName="ServiceTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTypesToSuggestions">
+      <EntityTypeMapping TypeName="YMprojectModel.ServiceTypesToSuggestion">
+        <MappingFragment StoreEntitySet="ServiceTypesToSuggestions">
+          <ScalarProperty Name="ServiceTypeToSuggestionID" ColumnName="ServiceTypeToSuggestionID" />
+          <ScalarProperty Name="ServiceTypeListID" ColumnName="ServiceTypeListID" />
+          <ScalarProperty Name="SuggestionID" ColumnName="SuggestionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suggestions">
+      <EntityTypeMapping TypeName="YMprojectModel.Suggestion">
+        <MappingFragment StoreEntitySet="Suggestions">
+          <ScalarProperty Name="SuggestionID" ColumnName="SuggestionID" />
+          <ScalarProperty Name="SuggestionTitle" ColumnName="SuggestionTitle" />
+          <ScalarProperty Name="SuggestionDescreotion" ColumnName="SuggestionDescreotion" />
+          <ScalarProperty Name="AdressId" ColumnName="AdressId" />
+          <ScalarProperty Name="ageRangeID" ColumnName="ageRangeID" />
+          <ScalarProperty Name="hoursRangeID" ColumnName="hoursRangeID" />
+          <ScalarProperty Name="hostId" ColumnName="hostId" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Travelers">
+      <EntityTypeMapping TypeName="YMprojectModel.Traveler">
+        <MappingFragment StoreEntitySet="Travelers">
+          <ScalarProperty Name="TravelerID" ColumnName="TravelerID" />
+          <ScalarProperty Name="TravelerName" ColumnName="TravelerName" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="YMprojectModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,411 @@
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.dll.config
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.exe
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.exe.config
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.rsp
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.exe
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.exe.config
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.rsp
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.AppContext.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Console.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Net.Http.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.exe
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.exe.config
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.rsp
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Antlr3.Runtime.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Helpers.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Mvc.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Optimization.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Razor.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\WebGrease.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Helpers.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Mvc.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Optimization.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Razor.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Antlr3.Runtime.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csproj.CopyComplete
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\BL.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DTO.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\BL.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DTO.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.dll.config
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.dll.config
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.exe
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.exe.config
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.rsp
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.exe
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.exe.config
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.rsp
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.AppContext.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Console.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.Compression.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Net.Http.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.ValueTuple.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.exe
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.exe.config
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.rsp
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Antlr3.Runtime.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\BL.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DTO.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Data.Tools.Components.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Data.Tools.Schema.Sql.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Newtonsoft.Json.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Helpers.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Mvc.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Optimization.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Razor.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\WebGrease.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Data.Tools.Utilities.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Build.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Build.Framework.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Collections.Immutable.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Memory.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Threading.Tasks.Dataflow.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Numerics.Vectors.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Buffers.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\BL.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DTO.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Newtonsoft.Json.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Helpers.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Mvc.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Optimization.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Razor.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Antlr3.Runtime.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.dll.config
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\cs\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\de\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\en\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\es\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\fr\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\it\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\ja\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\ko\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\pl\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\pt-BR\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\ru\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\tr\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\zh-Hans\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\zh-Hant\Microsoft.Build.resources.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csprojAssemblyReference.cache
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csproj.CoreCompileInputs.cache
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csproj.CopyComplete
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.dll.config
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.exe
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.exe.config
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.rsp
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.exe
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.exe.config
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.rsp
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Managed.Core.targets
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.AppContext.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Collections.Immutable.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Console.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Globalization.Calendars.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.Compression.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.FileSystem.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Net.Http.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Net.Sockets.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Reflection.Metadata.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.ValueTuple.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XmlDocument.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XPath.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.exe
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.exe.config
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.rsp
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\VBCSCompiler.exe
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\VBCSCompiler.exe.config
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Antlr3.Runtime.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\BL.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DTO.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.SqlServer.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Web.Infrastructure.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Newtonsoft.Json.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Net.Http.Formatting.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Helpers.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.WebHost.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Mvc.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Optimization.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Razor.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Deployment.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Razor.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\WebGrease.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\BL.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DTO.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.SqlServer.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Newtonsoft.Json.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Net.Http.Formatting.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Helpers.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.WebHost.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Mvc.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Optimization.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Razor.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Deployment.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Razor.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Antlr3.Runtime.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.dll.config
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csprojAssemblyReference.cache
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csproj.CoreCompileInputs.cache
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csproj.CopyComplete
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.dll.config
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\SmallWorldWebApi.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.exe
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.exe.config
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csc.rsp
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.exe
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.exe.config
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\csi.rsp
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.AppContext.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Console.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Net.Http.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.exe
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.exe.config
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\vbc.rsp
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Antlr3.Runtime.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\BL.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DTO.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Newtonsoft.Json.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Helpers.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Mvc.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Optimization.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Razor.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\WebGrease.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\BL.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DTO.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Newtonsoft.Json.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Helpers.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Mvc.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Optimization.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.Razor.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Antlr3.Runtime.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\bin\DAL.dll.config
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csprojAssemblyReference.cache
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.csproj.CopyComplete
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\SmallWorldWebApi\obj\Debug\SmallWorldWebApi.pdb

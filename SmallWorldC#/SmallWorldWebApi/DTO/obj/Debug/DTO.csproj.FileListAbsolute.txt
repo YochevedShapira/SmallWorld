@@ -1,0 +1,24 @@
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.pdb
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.dll
+C:\Users\User\Desktop\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.pdb
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.dll
+C:\Users\שמור על המחשב\Documents\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.pdb
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.dll
+F:\מהשכרה\תכנות\project\Project\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DTO\bin\Debug\DTO.pdb
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.dll
+C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DTO\obj\Debug\DTO.pdb

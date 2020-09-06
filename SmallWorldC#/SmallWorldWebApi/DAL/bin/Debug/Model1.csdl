@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="YMprojectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressId" />
+    </Key>
+    <Property Name="AddressId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LocationHosts" Relationship="Self.FK__LocationH__Addre__2A4B4B5E" FromRole="Address" ToRole="LocationHost" />
+    <NavigationProperty Name="Stops" Relationship="Self.FK__Stops__StopLocat__403A8C7D" FromRole="Address" ToRole="Stops" />
+  </EntityType>
+  <EntityType Name="BooleanSelectedValue">
+    <Key>
+      <PropertyRef Name="PrameterID" />
+    </Key>
+    <Property Name="PrameterID" Type="Int32" Nullable="false" />
+    <Property Name="SelctedValue" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ParameterSelectedValue" Relationship="Self.FK__BooleanSe__Prame__4BAC3F29" FromRole="BooleanSelectedValues" ToRole="ParameterSelectedValues" />
+  </EntityType>
+  <EntityType Name="Host">
+    <Key>
+      <PropertyRef Name="HostID" />
+    </Key>
+    <Property Name="HostID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HostName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="HostEmail" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HostTel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HostTextDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LocationHosts" Relationship="Self.FK__LocationH__HostI__29572725" FromRole="Hosts" ToRole="LocationHost" />
+    <NavigationProperty Name="User" Relationship="YMprojectModel.FK__Hosts__HostID__3D5E1FD2" FromRole="Host" ToRole="User" />
+  </EntityType>
+  <EntityType Name="LocationHost">
+    <Key>
+      <PropertyRef Name="LocationHostID" />
+    </Key>
+    <Property Name="LocationHostID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HostID" Type="Int32" />
+    <Property Name="AddressId" Type="Int32" />
+    <NavigationProperty Name="Address" Relationship="Self.FK__LocationH__Addre__2A4B4B5E" FromRole="LocationHost" ToRole="Address" />
+    <NavigationProperty Name="Host" Relationship="Self.FK__LocationH__HostI__29572725" FromRole="LocationHost" ToRole="Hosts" />
+    <NavigationProperty Name="Stops" Relationship="Self.FK__Stops__HostLocat__4222D4EF" FromRole="LocationHost" ToRole="Stops" />
+    <NavigationProperty Name="Suggestions" Relationship="Self.FK__Suggestio__Locat__2D27B809" FromRole="LocationHost" ToRole="Suggestions" />
+  </EntityType>
+  <EntityType Name="NumericSelectedValue">
+    <Key>
+      <PropertyRef Name="PrameterID" />
+    </Key>
+    <Property Name="PrameterID" Type="Int32" Nullable="false" />
+    <Property Name="SelctedValue" Type="Int32" Nullable="false" />
+    <Property Name="RequiredRatio" Type="Int32" />
+    <NavigationProperty Name="ParameterSelectedValue" Relationship="Self.FK__NumericSe__Prame__398D8EEE" FromRole="NumericSelectedValues" ToRole="ParameterSelectedValues" />
+  </EntityType>
+  <EntityType Name="ParameterSelectedValue">
+    <Key>
+      <PropertyRef Name="PrameterValueID" />
+    </Key>
+    <Property Name="PrameterValueID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PrameterTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Optional" Type="Boolean" />
+    <Property Name="SuggestionID" Type="Int32" />
+    <Property Name="RequestID" Type="Int32" />
+    <NavigationProperty Name="BooleanSelectedValue" Relationship="Self.FK__BooleanSe__Prame__4BAC3F29" FromRole="ParameterSelectedValues" ToRole="BooleanSelectedValues" />
+    <NavigationProperty Name="NumericSelectedValue" Relationship="Self.FK__NumericSe__Prame__398D8EEE" FromRole="ParameterSelectedValues" ToRole="NumericSelectedValues" />
+    <NavigationProperty Name="ParameterType" Relationship="Self.FK__Parameter__Prame__34C8D9D1" FromRole="ParameterSelectedValues" ToRole="ParameterTypes" />
+    <NavigationProperty Name="Request" Relationship="Self.FK__Parameter__Reque__36B12243" FromRole="ParameterSelectedValues" ToRole="Requests" />
+    <NavigationProperty Name="Suggestion" Relationship="Self.FK__Parameter__Sugge__35BCFE0A" FromRole="ParameterSelectedValues" ToRole="Suggestions" />
+    <NavigationProperty Name="SelectOption" Relationship="Self.ListSelectedValues" FromRole="ParameterSelectedValues" ToRole="SelectOptions" />
+  </EntityType>
+  <EntityType Name="ParameterType">
+    <Key>
+      <PropertyRef Name="ParameterTypeID" />
+    </Key>
+    <Property Name="ParameterTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParameterName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ParameterDataType" Type="Int32" />
+    <Property Name="Optional" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ParameterSelectedValues" Relationship="Self.FK__Parameter__Prame__34C8D9D1" FromRole="ParameterTypes" ToRole="ParameterSelectedValues" />
+  </EntityType>
+  <EntityType Name="Request">
+    <Key>
+      <PropertyRef Name="RequestID" />
+    </Key>
+    <Property Name="RequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Precision="0" />
+    <Property Name="TravelerID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ParameterSelectedValues" Relationship="Self.FK__Parameter__Reque__36B12243" FromRole="Requests" ToRole="ParameterSelectedValues" />
+    <NavigationProperty Name="Traveler" Relationship="Self.FK__Requests__Travel__31EC6D26" FromRole="Requests" ToRole="Travelers" />
+    <NavigationProperty Name="ServiceTypes" Relationship="Self.FK__ServiceTy__Reque__3D5E1FD2" FromRole="Requests" ToRole="ServiceType" />
+    <NavigationProperty Name="Stops" Relationship="Self.FK__Stops__RequestId__412EB0B6" FromRole="Requests" ToRole="Stops" />
+  </EntityType>
+  <EntityType Name="SelectOption">
+    <Key>
+      <PropertyRef Name="OptionId" />
+    </Key>
+    <Property Name="OptionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OptionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ParameterSelectedValues" Relationship="Self.ListSelectedValues" FromRole="SelectOptions" ToRole="ParameterSelectedValues" />
+  </EntityType>
+  <EntityType Name="ServiceType">
+    <Key>
+      <PropertyRef Name="ServiceTypeID" />
+    </Key>
+    <Property Name="ServiceTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SuggestionID" Type="Int32" />
+    <Property Name="RequestID" Type="Int32" />
+    <NavigationProperty Name="Request" Relationship="Self.FK__ServiceTy__Reque__3D5E1FD2" FromRole="ServiceType" ToRole="Requests" />
+    <NavigationProperty Name="Suggestion" Relationship="Self.FK__ServiceTy__Sugge__3C69FB99" FromRole="ServiceType" ToRole="Suggestions" />
+    <NavigationProperty Name="Stops" Relationship="Self.FK__Stops__ServiceTy__4316F928" FromRole="ServiceType" ToRole="Stops" />
+  </EntityType>
+  <EntityType Name="Stop">
+    <Key>
+      <PropertyRef Name="StopId" />
+    </Key>
+    <Property Name="StopId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StopLocation" Type="Int32" />
+    <Property Name="RequestId" Type="Int32" />
+    <Property Name="HostLocationId" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Precision="0" />
+    <Property Name="ServiceTypeId" Type="Int32" />
+    <NavigationProperty Name="Address" Relationship="Self.FK__Stops__StopLocat__403A8C7D" FromRole="Stops" ToRole="Address" />
+    <NavigationProperty Name="LocationHost" Relationship="Self.FK__Stops__HostLocat__4222D4EF" FromRole="Stops" ToRole="LocationHost" />
+    <NavigationProperty Name="Request" Relationship="Self.FK__Stops__RequestId__412EB0B6" FromRole="Stops" ToRole="Requests" />
+    <NavigationProperty Name="ServiceType" Relationship="Self.FK__Stops__ServiceTy__4316F928" FromRole="Stops" ToRole="ServiceType" />
+  </EntityType>
+  <EntityType Name="Suggestion">
+    <Key>
+      <PropertyRef Name="SuggestionID" />
+    </Key>
+    <Property Name="SuggestionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationHostID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="LocationHost" Relationship="Self.FK__Suggestio__Locat__2D27B809" FromRole="Suggestions" ToRole="LocationHost" />
+    <NavigationProperty Name="ParameterSelectedValues" Relationship="Self.FK__Parameter__Sugge__35BCFE0A" FromRole="Suggestions" ToRole="ParameterSelectedValues" />
+    <NavigationProperty Name="ServiceTypes" Relationship="Self.FK__ServiceTy__Sugge__3C69FB99" FromRole="Suggestions" ToRole="ServiceType" />
+  </EntityType>
+  <EntityType Name="Traveler">
+    <Key>
+      <PropertyRef Name="TravelerID" />
+    </Key>
+    <Property Name="TravelerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TravelerName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Requests" Relationship="Self.FK__Requests__Travel__31EC6D26" FromRole="Travelers" ToRole="Requests" />
+    <NavigationProperty Name="User" Relationship="YMprojectModel.FK__Travelers__Trave__3A81B327" FromRole="Traveler" ToRole="User" />
+  </EntityType>
+  <Association Name="FK__LocationH__Addre__2A4B4B5E">
+    <End Role="Address" Type="Self.Address" Multiplicity="0..1" />
+    <End Role="LocationHost" Type="Self.LocationHost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="LocationHost">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Stops__StopLocat__403A8C7D">
+    <End Role="Address" Type="Self.Address" Multiplicity="0..1" />
+    <End Role="Stops" Type="Self.Stop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="Stops">
+        <PropertyRef Name="StopLocation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BooleanSe__Prame__4BAC3F29">
+    <End Role="ParameterSelectedValues" Type="Self.ParameterSelectedValue" Multiplicity="1" />
+    <End Role="BooleanSelectedValues" Type="Self.BooleanSelectedValue" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ParameterSelectedValues">
+        <PropertyRef Name="PrameterValueID" />
+      </Principal>
+      <Dependent Role="BooleanSelectedValues">
+        <PropertyRef Name="PrameterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LocationH__HostI__29572725">
+    <End Role="Hosts" Type="Self.Host" Multiplicity="0..1" />
+    <End Role="LocationHost" Type="Self.LocationHost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hosts">
+        <PropertyRef Name="HostID" />
+      </Principal>
+      <Dependent Role="LocationHost">
+        <PropertyRef Name="HostID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Stops__HostLocat__4222D4EF">
+    <End Role="LocationHost" Type="Self.LocationHost" Multiplicity="0..1" />
+    <End Role="Stops" Type="Self.Stop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LocationHost">
+        <PropertyRef Name="LocationHostID" />
+      </Principal>
+      <Dependent Role="Stops">
+        <PropertyRef Name="HostLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Suggestio__Locat__2D27B809">
+    <End Role="LocationHost" Type="Self.LocationHost" Multiplicity="1" />
+    <End Role="Suggestions" Type="Self.Suggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LocationHost">
+        <PropertyRef Name="LocationHostID" />
+      </Principal>
+      <Dependent Role="Suggestions">
+        <PropertyRef Name="LocationHostID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NumericSe__Prame__398D8EEE">
+    <End Role="ParameterSelectedValues" Type="Self.ParameterSelectedValue" Multiplicity="1" />
+    <End Role="NumericSelectedValues" Type="Self.NumericSelectedValue" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ParameterSelectedValues">
+        <PropertyRef Name="PrameterValueID" />
+      </Principal>
+      <Dependent Role="NumericSelectedValues">
+        <PropertyRef Name="PrameterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Parameter__Prame__34C8D9D1">
+    <End Role="ParameterTypes" Type="Self.ParameterType" Multiplicity="1" />
+    <End Role="ParameterSelectedValues" Type="Self.ParameterSelectedValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParameterTypes">
+        <PropertyRef Name="ParameterTypeID" />
+      </Principal>
+      <Dependent Role="ParameterSelectedValues">
+        <PropertyRef Name="PrameterTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Parameter__Reque__36B12243">
+    <End Role="Requests" Type="Self.Request" Multiplicity="0..1" />
+    <End Role="ParameterSelectedValues" Type="Self.ParameterSelectedValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Requests">
+        <PropertyRef Name="RequestID" />
+      </Principal>
+      <Dependent Role="ParameterSelectedValues">
+        <PropertyRef Name="RequestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Parameter__Sugge__35BCFE0A">
+    <End Role="Suggestions" Type="Self.Suggestion" Multiplicity="0..1" />
+    <End Role="ParameterSelectedValues" Type="Self.ParameterSelectedValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suggestions">
+        <PropertyRef Name="SuggestionID" />
+      </Principal>
+      <Dependent Role="ParameterSelectedValues">
+        <PropertyRef Name="SuggestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Requests__Travel__31EC6D26">
+    <End Role="Travelers" Type="Self.Traveler" Multiplicity="1" />
+    <End Role="Requests" Type="Self.Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Travelers">
+        <PropertyRef Name="TravelerID" />
+      </Principal>
+      <Dependent Role="Requests">
+        <PropertyRef Name="TravelerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiceTy__Reque__3D5E1FD2">
+    <End Role="Requests" Type="Self.Request" Multiplicity="0..1" />
+    <End Role="ServiceType" Type="Self.ServiceType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Requests">
+        <PropertyRef Name="RequestID" />
+      </Principal>
+      <Dependent Role="ServiceType">
+        <PropertyRef Name="RequestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Stops__RequestId__412EB0B6">
+    <End Role="Requests" Type="Self.Request" Multiplicity="0..1" />
+    <End Role="Stops" Type="Self.Stop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Requests">
+        <PropertyRef Name="RequestID" />
+      </Principal>
+      <Dependent Role="Stops">
+        <PropertyRef Name="RequestId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiceTy__Sugge__3C69FB99">
+    <End Role="Suggestions" Type="Self.Suggestion" Multiplicity="0..1" />
+    <End Role="ServiceType" Type="Self.ServiceType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suggestions">
+        <PropertyRef Name="SuggestionID" />
+      </Principal>
+      <Dependent Role="ServiceType">
+        <PropertyRef Name="SuggestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Stops__ServiceTy__4316F928">
+    <End Role="ServiceType" Type="Self.ServiceType" Multiplicity="0..1" />
+    <End Role="Stops" Type="Self.Stop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceType">
+        <PropertyRef Name="ServiceTypeID" />
+      </Principal>
+      <Dependent Role="Stops">
+        <PropertyRef Name="ServiceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ListSelectedValues">
+    <End Role="ParameterSelectedValues" Type="Self.ParameterSelectedValue" Multiplicity="*" />
+    <End Role="SelectOptions" Type="Self.SelectOption" Multiplicity="0..1" />
+  </Association>
+  <EntityContainer Name="YMprojectEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addresses" EntityType="Self.Address" />
+    <EntitySet Name="BooleanSelectedValues" EntityType="Self.BooleanSelectedValue" />
+    <EntitySet Name="Hosts" EntityType="Self.Host" />
+    <EntitySet Name="LocationHosts" EntityType="Self.LocationHost" />
+    <EntitySet Name="NumericSelectedValues" EntityType="Self.NumericSelectedValue" />
+    <EntitySet Name="ParameterSelectedValues" EntityType="Self.ParameterSelectedValue" />
+    <EntitySet Name="ParameterTypes" EntityType="Self.ParameterType" />
+    <EntitySet Name="Requests" EntityType="Self.Request" />
+    <EntitySet Name="SelectOptions" EntityType="Self.SelectOption" />
+    <EntitySet Name="ServiceTypes" EntityType="Self.ServiceType" />
+    <EntitySet Name="Stops" EntityType="Self.Stop" />
+    <EntitySet Name="Suggestions" EntityType="Self.Suggestion" />
+    <EntitySet Name="Travelers" EntityType="Self.Traveler" />
+    <AssociationSet Name="FK__LocationH__Addre__2A4B4B5E" Association="Self.FK__LocationH__Addre__2A4B4B5E">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="LocationHost" EntitySet="LocationHosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Stops__StopLocat__403A8C7D" Association="Self.FK__Stops__StopLocat__403A8C7D">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="Stops" EntitySet="Stops" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BooleanSe__Prame__4BAC3F29" Association="Self.FK__BooleanSe__Prame__4BAC3F29">
+      <End Role="ParameterSelectedValues" EntitySet="ParameterSelectedValues" />
+      <End Role="BooleanSelectedValues" EntitySet="BooleanSelectedValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LocationH__HostI__29572725" Association="Self.FK__LocationH__HostI__29572725">
+      <End Role="Hosts" EntitySet="Hosts" />
+      <End Role="LocationHost" EntitySet="LocationHosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Stops__HostLocat__4222D4EF" Association="Self.FK__Stops__HostLocat__4222D4EF">
+      <End Role="LocationHost" EntitySet="LocationHosts" />
+      <End Role="Stops" EntitySet="Stops" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Suggestio__Locat__2D27B809" Association="Self.FK__Suggestio__Locat__2D27B809">
+      <End Role="LocationHost" EntitySet="LocationHosts" />
+      <End Role="Suggestions" EntitySet="Suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NumericSe__Prame__398D8EEE" Association="Self.FK__NumericSe__Prame__398D8EEE">
+      <End Role="ParameterSelectedValues" EntitySet="ParameterSelectedValues" />
+      <End Role="NumericSelectedValues" EntitySet="NumericSelectedValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Parameter__Prame__34C8D9D1" Association="Self.FK__Parameter__Prame__34C8D9D1">
+      <End Role="ParameterTypes" EntitySet="ParameterTypes" />
+      <End Role="ParameterSelectedValues" EntitySet="ParameterSelectedValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Parameter__Reque__36B12243" Association="Self.FK__Parameter__Reque__36B12243">
+      <End Role="Requests" EntitySet="Requests" />
+      <End Role="ParameterSelectedValues" EntitySet="ParameterSelectedValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Parameter__Sugge__35BCFE0A" Association="Self.FK__Parameter__Sugge__35BCFE0A">
+      <End Role="Suggestions" EntitySet="Suggestions" />
+      <End Role="ParameterSelectedValues" EntitySet="ParameterSelectedValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Requests__Travel__31EC6D26" Association="Self.FK__Requests__Travel__31EC6D26">
+      <End Role="Travelers" EntitySet="Travelers" />
+      <End Role="Requests" EntitySet="Requests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiceTy__Reque__3D5E1FD2" Association="Self.FK__ServiceTy__Reque__3D5E1FD2">
+      <End Role="Requests" EntitySet="Requests" />
+      <End Role="ServiceType" EntitySet="ServiceTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Stops__RequestId__412EB0B6" Association="Self.FK__Stops__RequestId__412EB0B6">
+      <End Role="Requests" EntitySet="Requests" />
+      <End Role="Stops" EntitySet="Stops" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiceTy__Sugge__3C69FB99" Association="Self.FK__ServiceTy__Sugge__3C69FB99">
+      <End Role="Suggestions" EntitySet="Suggestions" />
+      <End Role="ServiceType" EntitySet="ServiceTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Stops__ServiceTy__4316F928" Association="Self.FK__Stops__ServiceTy__4316F928">
+      <End Role="ServiceType" EntitySet="ServiceTypes" />
+      <End Role="Stops" EntitySet="Stops" />
+    </AssociationSet>
+    <AssociationSet Name="ListSelectedValues" Association="Self.ListSelectedValues">
+      <End Role="ParameterSelectedValues" EntitySet="ParameterSelectedValues" />
+      <End Role="SelectOptions" EntitySet="SelectOptions" />
+    </AssociationSet>
+    <EntitySet Name="Users" EntityType="YMprojectModel.User" />
+    <AssociationSet Name="FK__Travelers__Trave__3A81B327" Association="YMprojectModel.FK__Travelers__Trave__3A81B327">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Traveler" EntitySet="Travelers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Hosts__HostID__3D5E1FD2" Association="YMprojectModel.FK__Hosts__HostID__3D5E1FD2">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Host" EntitySet="Hosts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Traveler" Relationship="YMprojectModel.FK__Travelers__Trave__3A81B327" FromRole="User" ToRole="Traveler" />
+    <NavigationProperty Name="Host" Relationship="YMprojectModel.FK__Hosts__HostID__3D5E1FD2" FromRole="User" ToRole="Host" />
+  </EntityType>
+  <Association Name="FK__Travelers__Trave__3A81B327">
+    <End Type="YMprojectModel.User" Role="User" Multiplicity="1" />
+    <End Type="YMprojectModel.Traveler" Role="Traveler" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Traveler">
+        <PropertyRef Name="TravelerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Hosts__HostID__3D5E1FD2">
+    <End Type="YMprojectModel.User" Role="User" Multiplicity="1" />
+    <End Type="YMprojectModel.Host" Role="Host" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Host">
+        <PropertyRef Name="HostID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

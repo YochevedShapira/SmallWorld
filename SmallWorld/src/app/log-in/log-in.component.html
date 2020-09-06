@@ -1,0 +1,38 @@
+<div class="center">
+    <mat-card>
+        <p #header class="title-text">
+            Log in
+        </p>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+            <p>
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input type=" text" matInput formControlName="name" required>
+                    <mat-error *ngIf="name.invalid">
+                        {{getErrorMessageName()}} </mat-error>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <mat-label>Password</mat-label>
+                    <input #password matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="password.invalid">
+                        {{getErrorMessagePassword()}} </mat-error>
+                </mat-form-field>
+            </p>
+
+            <button mat-button type="submit" color="primary">Login</button>
+                    
+            <input #colorPicker type="color" (change)="changeColor()">
+
+            <p class="error">{{authService.message.error}}</p>
+
+
+        </form>
+    </mat-card>
+</div>

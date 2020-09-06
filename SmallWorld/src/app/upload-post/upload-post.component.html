@@ -1,0 +1,80 @@
+<div class="center">
+    <mat-card>
+        <p class="title-text">
+            Post-Details: </p>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+            <p>
+                <mat-form-field class="form-field">
+                    <mat-label>Title</mat-label>
+                    <input type=" text" matInput formControlName="title" required>
+                    <mat-error *ngIf="title.invalid">
+                        {{getErrorMessageTitle()}} </mat-error>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field class="location">
+                    <mat-label>Street</mat-label>
+                    <input #street matInput formControlName="street">
+                </mat-form-field>
+                <mat-form-field class="location">
+                    <mat-label>City</mat-label>
+                    <input #city matInput formControlName="city" autocomplete="off">
+                </mat-form-field>
+                <mat-form-field class="location">
+                    <mat-label>Country</mat-label>
+                    <input #country matInput formControlName="country" autocomplete="off">
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field class="form-field">
+                    <mat-label>Details</mat-label>
+                    <textarea #details formControlName="details" matInput></textarea>
+                    <mat-error *ngIf="details.invalid">
+                        {{getErrorMessageDetails()}} </mat-error>
+                </mat-form-field>
+            </p>
+            <div style="width: 500px;margin: auto;;">
+                <h5 style="text-align: left;color: gray;">Parameters:</h5>
+            </div>
+            <p>
+                <mat-form-field class="form-field">
+                    <mat-label>Type of Service</mat-label>
+                    <mat-select [formControl]="toppings" multiple>
+                        <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping.ServiceTypeName}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-icon matSuffix>arrow_drop_down</mat-icon>
+
+                </mat-form-field>
+            </p>
+            <p class="p">
+
+                <mat-label>Range of Age</mat-label>
+                <ng5-slider [(value)]="value_age" [(highValue)]="highValue_age" [options]="options_age"></ng5-slider>
+
+            </p>
+            <p class="p">
+
+                <mat-label>Range of Hours</mat-label>
+                <ng5-slider [(value)]="value_hours" [(highValue)]="highValue_hours" [options]="options_hours">
+                </ng5-slider>
+
+            </p>
+
+            <p>
+                <mat-form-field class="form-field">
+                    <mat-label> Gender</mat-label>
+                    <mat-select #gender formControlName="gender">
+                        <mat-option value="female">female</mat-option>
+                        <mat-option value="male">male</mat-option>
+                    </mat-select>
+                    <mat-icon matSuffix>arrow_drop_down</mat-icon>
+                </mat-form-field>
+            </p>
+            <button mat-button type="submit" color="primary">Upload <mat-icon>cloud_upload</mat-icon></button>
+
+        </form>
+    </mat-card>
+</div>
