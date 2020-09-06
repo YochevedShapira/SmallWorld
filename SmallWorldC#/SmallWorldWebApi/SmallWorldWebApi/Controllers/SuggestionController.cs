@@ -15,8 +15,8 @@ namespace SmallWorldWebApi.Controllers
         public IHttpActionResult AddSuggestion(SuggestionDto suggestionDto)
             {
             SuggestionDto s = BL.ManageSuggestion.SaveSuggestion(suggestionDto);
-            if (s != null)
-                return Created<SuggestionDto>("The content was successfully inserted into the database", s);
+            if (s != null) 
+                return Created<SuggestionDto>("The content inserted into the database successfully", s);
             return InternalServerError();
         }
         [HttpPut]

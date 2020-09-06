@@ -42,5 +42,7 @@ namespace DTO
         public string City { get; set; }
         public string Street { get; set; }
         public int HostId { get; set; }
+        public DateTime DateStart { get; set; }
+        public DateTime DateEnd { get; set; }
     }
 }
