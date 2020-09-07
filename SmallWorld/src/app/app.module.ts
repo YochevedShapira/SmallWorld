@@ -65,7 +65,8 @@ import { Ng5SliderModule } from 'ng5-slider';
     MatNativeDateModule,
     MatSelectModule,
     MatExpansionModule,
-    Ng5SliderModule
+    Ng5SliderModule,
+
 
   ],
   providers: [

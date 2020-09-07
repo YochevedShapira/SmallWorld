@@ -15,15 +15,21 @@
             <p>
                 <mat-form-field class="location">
                     <mat-label>Street</mat-label>
-                    <input #street matInput formControlName="street">
+                    <input #street matInput formControlName="street" required>
+                    <mat-error *ngIf="street.invalid">
+                        {{getErrorMessageStreet()}} </mat-error>
                 </mat-form-field>
                 <mat-form-field class="location">
                     <mat-label>City</mat-label>
-                    <input #city matInput formControlName="city" autocomplete="off">
+                    <input #city matInput formControlName="city" autocomplete="off" required>
+                    <mat-error *ngIf="city.invalid">
+                        {{getErrorMessageCity()}} </mat-error>
                 </mat-form-field>
                 <mat-form-field class="location">
                     <mat-label>Country</mat-label>
-                    <input #country matInput formControlName="country" autocomplete="off">
+                    <input #country matInput formControlName="country" autocomplete="off" required>
+                    <mat-error *ngIf="country.invalid">
+                        {{getErrorMessageCountry()}} </mat-error>
                 </mat-form-field>
             </p>
 
@@ -31,8 +37,7 @@
                 <mat-form-field class="form-field">
                     <mat-label>Details</mat-label>
                     <textarea #details formControlName="details" matInput></textarea>
-                    <mat-error *ngIf="details.invalid">
-                        {{getErrorMessageDetails()}} </mat-error>
+
                 </mat-form-field>
             </p>
             <div style="width: 500px;margin: auto;;">
@@ -52,13 +57,22 @@
             <p class="p">
 
                 <mat-label>Range of Age</mat-label>
-                <ng5-slider [(value)]="value_age" [(highValue)]="highValue_age" [options]="options_age"></ng5-slider>
+                <span>
+                    <mat-checkbox color="primary" (click)="changeRangeAge()"></mat-checkbox>
+                </span>
+
+                <ng5-slider *ngIf="rangeAge" [(value)]="value_age" [(highValue)]="highValue_age"
+                    [options]="options_age"></ng5-slider>
 
             </p>
             <p class="p">
 
                 <mat-label>Range of Hours</mat-label>
-                <ng5-slider [(value)]="value_hours" [(highValue)]="highValue_hours" [options]="options_hours">
+                <span>
+                    <mat-checkbox color="primary" (click)="changeRangeHour()"></mat-checkbox>
+                </span>
+                <ng5-slider *ngIf="rangeHour" [(value)]="value_hours" [(highValue)]="highValue_hours"
+                    [options]="options_hours">
                 </ng5-slider>
 
             </p>
