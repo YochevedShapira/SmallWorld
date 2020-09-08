@@ -25,7 +25,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import { MatSelectModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material/select';
 import { HomeComponent } from './home/home.component';
 import { UploadPostComponent } from './upload-post/upload-post.component';
 import { HostPersonalAreaComponent } from './host-personal-area/host-personal-area.component';
