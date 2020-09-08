@@ -27,6 +27,7 @@ export class UploadPostComponent implements OnInit {
     else this.index_status = 0;
   }
   @Input() status: boolean;
+
   icons = ['cloud_upload', 'save']
   text_button = ['Upload', 'Save']
   index_status;
@@ -41,7 +42,10 @@ export class UploadPostComponent implements OnInit {
     floor: 0,
     ceil: 120
   };
-
+  range = new FormGroup({
+    start: new FormControl(),
+    end: new FormControl()
+  });
   value_hours: number = 10;
   highValue_hours: number = 15;
   options_hours: Options = {

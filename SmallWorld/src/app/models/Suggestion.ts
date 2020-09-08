@@ -14,6 +14,7 @@ export class Suggestion {
     Street?: string;
     City?: string;
     servicesType: number[];
+
     public Suggestion() {
 
 
