@@ -1,5 +1,5 @@
 import { Traveler } from './Traveler';
-import { HoursRange } from './Suggestion';
+import { HoursRange } from './HoursRange';
 
 export class Request {
     RequestID: number;
@@ -9,6 +9,8 @@ export class Request {
     Street?: string;
     City?: string;
     servicesType: number[];
+    DateStart: Date;
+    DateEnd: Date;
     public Request() {
 
     }

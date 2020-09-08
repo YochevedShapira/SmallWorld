@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-
+    public class HoursRange
+    {
+        public int StartHour { get; set; }
+        public int MaxHour { get; set; }
+    }
     public class SuggestionDto
     {
 
@@ -15,11 +19,7 @@ namespace DTO
             public int MinAge { get; set; }
             public int MaxAge { get; set; }
         }
-        public class HoursRange
-        {
-            public int StartHour { get; set; }
-            public int MaxHour { get; set; }
-        }
+        
 
         public int SuggestionID { get; set; }
         public string Title { get; set; }
@@ -42,7 +42,6 @@ namespace DTO
         public string City { get; set; }
         public string Street { get; set; }
         public int HostId { get; set; }
-        public DateTime DateStart { get; set; }
-        public DateTime DateEnd { get; set; }
+       List<bookedDate>bookedDates { get; set; }
     }
 }

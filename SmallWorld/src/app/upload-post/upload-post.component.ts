@@ -3,11 +3,13 @@ import { AuthService } from '../services/auth.service';
 import { SuggestionService } from '../services/suggestion.service';
 import { Validators, FormControl, FormGroup } from '@angular/forms';
 import { Options } from 'ng5-slider';
-import { Suggestion, AgeRange, HoursRange } from '../models/Suggestion';
+import { Suggestion } from '../models/Suggestion';
 import { User } from '../models/User';
 import { ServiceTypeService } from '../services/service-type.service';
 import { ServiceTypeMapper } from '../models/ServiceTypeMapper'
 import { range } from 'rxjs';
+import { HoursRange } from '../models/HoursRange';
+import { AgeRange } from '../models/AgeRange';
 @Component({
   selector: 'app-upload-post',
   templateUrl: './upload-post.component.html',

@@ -22,6 +22,8 @@
         <AssociationConnector Association="YMprojectModel.FK__ServiceTy__Servi__3D5E1FD2" ManuallyRouted="false" />
         <AssociationConnector Association="YMprojectModel.FK__ServiceTy__Sugge__3E52440B" ManuallyRouted="false" />
         <AssociationConnector Association="YMprojectModel.FK__Travelers__Trave__267ABA7A" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="YMprojectModel.bookedDate" Width="1.5" PointX="7.5" PointY="5" />
+        <AssociationConnector Association="YMprojectModel.FK__bookedDat__Sugge__49C3F6B7" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { HostService } from '../services/host.service'
@@ -12,17 +12,28 @@ import { TravelerService } from '../services/traveler.service';
   styleUrls: ['./sign-up.component.scss']
 })
 export class SignUpComponent implements OnInit {
+  @Input() status_user: string;
+  @Input() status: boolean;
+
   hide = true;
   host_to_add: Host = new Host;
   traveler_to_add: Traveler = new Traveler;
 
   messageHost = { error: '' };
+  selectedIndex = 0;
 
   constructor(private authService: AuthService, private hostService: HostService, private travelerService: TravelerService) { }
 
   ngOnInit() {
+    if (this.status_user == 'traveler')
+      this.selectedIndex = 1
+    if (this.status)
+      this.index_status = 1;
+    else this.index_status = 0;
   }
-
+  icons = ['cloud_upload', 'save']
+  text_button = ['Signup', 'Save']
+  index_status;
   form_host = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(2)]),
     password: new FormControl('', [Validators.required, Validators.minLength(6)]),

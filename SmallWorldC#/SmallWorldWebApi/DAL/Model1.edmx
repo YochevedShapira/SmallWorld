@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="YMprojectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="YMprojectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Address">
           <Key>
             <PropertyRef Name="AddressId" />
@@ -21,6 +21,15 @@
           <Property Name="ageRangeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="age_min" Type="int" Nullable="false" />
           <Property Name="age_max" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="bookedDates">
+          <Key>
+            <PropertyRef Name="bookedDateId" />
+          </Key>
+          <Property Name="bookedDateId" Type="int" Nullable="false" />
+          <Property Name="SuggestionId" Type="int" Nullable="false" />
+          <Property Name="dateStart" Type="datetime" />
+          <Property Name="dateEnd" Type="datetime" />
         </EntityType>
         <EntityType Name="Hosts">
           <Key>
@@ -87,6 +96,18 @@
           <Property Name="UserPassword" Type="nvarchar" MaxLength="50" />
           <Property Name="UserName" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <Association Name="FK__bookedDat__Sugge__49C3F6B7">
+          <End Role="Suggestions" Type="Self.Suggestions" Multiplicity="1" />
+          <End Role="bookedDates" Type="Self.bookedDates" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Suggestions">
+              <PropertyRef Name="SuggestionID" />
+            </Principal>
+            <Dependent Role="bookedDates">
+              <PropertyRef Name="SuggestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__Hosts__HostID__29572725">
           <End Role="Users" Type="Self.Users" Multiplicity="1" />
           <End Role="Hosts" Type="Self.Hosts" Multiplicity="0..1" />
@@ -186,6 +207,7 @@
         <EntityContainer Name="YMprojectModelStoreContainer">
           <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ageRange" EntityType="Self.ageRange" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="bookedDates" EntityType="Self.bookedDates" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Hosts" EntityType="Self.Hosts" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HoursRange" EntityType="Self.HoursRange" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ServiceTypeList" EntityType="Self.ServiceTypeList" Schema="dbo" store:Type="Tables" />
@@ -193,6 +215,10 @@
           <EntitySet Name="Suggestions" EntityType="Self.Suggestions" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Travelers" EntityType="Self.Travelers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__bookedDat__Sugge__49C3F6B7" Association="Self.FK__bookedDat__Sugge__49C3F6B7">
+            <End Role="Suggestions" EntitySet="Suggestions" />
+            <End Role="bookedDates" EntitySet="bookedDates" />
+          </AssociationSet>
           <AssociationSet Name="FK__Hosts__HostID__29572725" Association="Self.FK__Hosts__HostID__29572725">
             <End Role="Users" EntitySet="Users" />
             <End Role="Hosts" EntitySet="Hosts" />
@@ -226,8 +252,7 @@
             <End Role="Travelers" EntitySet="Travelers" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="YMprojectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -308,6 +333,7 @@
           <NavigationProperty Name="Host" Relationship="Self.FK__Suggestio__hostI__3A81B327" FromRole="Suggestions" ToRole="Hosts" />
           <NavigationProperty Name="HoursRange" Relationship="Self.FK__Suggestio__hours__398D8EEE" FromRole="Suggestions" ToRole="HoursRange" />
           <NavigationProperty Name="ServiceTypesToSuggestions" Relationship="Self.FK__ServiceTy__Sugge__3E52440B" FromRole="Suggestions" ToRole="ServiceTypesToSuggestions" />
+          <NavigationProperty Name="bookedDates" Relationship="YMprojectModel.FK__bookedDat__Sugge__49C3F6B7" FromRole="Suggestion" ToRole="bookedDate" />
         </EntityType>
         <EntityType Name="Traveler">
           <Key>
@@ -467,7 +493,34 @@
             <End Role="Users" EntitySet="Users" />
             <End Role="Travelers" EntitySet="Travelers" />
           </AssociationSet>
+          <EntitySet Name="bookedDates" EntityType="YMprojectModel.bookedDate" />
+          <AssociationSet Name="FK__bookedDat__Sugge__49C3F6B7" Association="YMprojectModel.FK__bookedDat__Sugge__49C3F6B7">
+            <End Role="Suggestion" EntitySet="Suggestions" />
+            <End Role="bookedDate" EntitySet="bookedDates" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="bookedDate">
+          <Key>
+            <PropertyRef Name="bookedDateId" />
+          </Key>
+          <Property Name="bookedDateId" Type="Int32" Nullable="false" />
+          <Property Name="SuggestionId" Type="Int32" Nullable="false" />
+          <Property Name="dateStart" Type="DateTime" Precision="3" />
+          <Property Name="dateEnd" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Suggestion" Relationship="YMprojectModel.FK__bookedDat__Sugge__49C3F6B7" FromRole="bookedDate" ToRole="Suggestion" />
+        </EntityType>
+        <Association Name="FK__bookedDat__Sugge__49C3F6B7">
+          <End Type="YMprojectModel.Suggestion" Role="Suggestion" Multiplicity="1" />
+          <End Type="YMprojectModel.bookedDate" Role="bookedDate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Suggestion">
+              <PropertyRef Name="SuggestionID" />
+            </Principal>
+            <Dependent Role="bookedDate">
+              <PropertyRef Name="SuggestionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -562,6 +615,16 @@
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="bookedDates">
+            <EntityTypeMapping TypeName="YMprojectModel.bookedDate">
+              <MappingFragment StoreEntitySet="bookedDates">
+                <ScalarProperty Name="dateEnd" ColumnName="dateEnd" />
+                <ScalarProperty Name="dateStart" ColumnName="dateStart" />
+                <ScalarProperty Name="SuggestionId" ColumnName="SuggestionId" />
+                <ScalarProperty Name="bookedDateId" ColumnName="bookedDateId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

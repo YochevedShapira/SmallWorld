@@ -3,7 +3,7 @@
         <p class="title-text">
             Sign up
         </p>
-        <mat-tab-group dynamicHeight>
+        <mat-tab-group dynamicHeight [(selectedIndex)]=selectedIndex>
             <mat-tab label="Host">
                 <div class="example-small-box mat-elevation-z4">
                     <form [formGroup]="form_host" (ngSubmit)="onSubmit_host()">
@@ -74,7 +74,7 @@
                                     {{getErrorMessageDetails_host()}} </mat-error>
                             </mat-form-field>
                         </p>
-                        <button type="submit" mat-button color="primary">Signup</button>
+                        <button type="submit" (click)="selectedIndex = 0" mat-button color="primary">Signup</button>
                     </form>
                 </div>
             </mat-tab>
@@ -125,7 +125,7 @@
                                     {{getErrorMessageGender_traveler()}} </mat-error>
                             </mat-form-field>
                         </p>
-                        <button mat-button type="submit" color="primary">Signup</button>
+                        <button mat-button (click)="selectedIndex = 0" type="submit" color="primary">Signup</button>
                     </form>
                 </div>
             </mat-tab>

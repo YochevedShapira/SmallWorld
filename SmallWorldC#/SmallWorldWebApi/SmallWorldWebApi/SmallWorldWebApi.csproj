@@ -173,6 +173,7 @@
     <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HostController.cs" />
+    <Compile Include="Controllers\RequestController.cs" />
     <Compile Include="Controllers\ServicesListController.cs" />
     <Compile Include="Controllers\SuggestionController.cs" />
     <Compile Include="Controllers\TravelerController.cs" />

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceTypeMapper } from '../models/ServiceTypeMapper';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
-import { AgeRange, HoursRange, Suggestion } from '../models/Suggestion';
+import { Suggestion } from '../models/Suggestion';
 import { Options } from 'ng5-slider';
 import { ServiceTypeService } from '../services/service-type.service';
 import { Request } from '../models/Request';
 import { RequestService } from '../services/request.service';
+import { HoursRange } from '../models/HoursRange';
 
 @Component({
   selector: 'app-traveler-request',
@@ -33,8 +34,8 @@ export class TravelerRequestComponent implements OnInit {
   };
   form = new FormGroup({
     country: new FormControl('', Validators.required),
-    city: new FormControl('', Validators.required),
-    street: new FormControl('', Validators.required),
+    city: new FormControl(''),
+    street: new FormControl(''),
   });
   changeRangeHour() {
     this.rangeHour = !this.rangeHour;
@@ -56,22 +57,11 @@ export class TravelerRequestComponent implements OnInit {
     }
     return this.country.invalid ? 'Not a valid country' : '';
   }
-  getErrorMessageCity() {
-    if (this.city.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return this.city.invalid ? 'Not a valid city' : '';
-  }
-  getErrorMessageStreet() {
-    if (this.street.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return this.street.invalid ? 'Not a valid street' : '';
-  }
+
 
   onSubmit() {
 
-    if (this.form.get('country').value && this.form.get('city').value && this.form.get('street').value) {
+    if (this.form.get('country').value) {
       console.log("not-null");
       this.new_request.TravelerID = JSON.parse(localStorage.getItem('currentUser')).UserID;
       this.new_request.Street = this.form.get('street').value;

@@ -34,5 +34,6 @@ namespace DAL
         public virtual DbSet<Suggestion> Suggestions { get; set; }
         public virtual DbSet<Traveler> Travelers { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<bookedDate> bookedDates { get; set; }
     }
 }

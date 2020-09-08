@@ -70,6 +70,7 @@ import { TravelerPersonalAreaComponent } from './traveler-personal-area/traveler
     MatSelectModule,
     MatExpansionModule,
     Ng5SliderModule,
+    ReactiveFormsModule,
 
   ],
   providers: [

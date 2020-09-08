@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity; 
 
 namespace DAL
 {
@@ -16,13 +17,13 @@ namespace DAL
             {
                 using (YMprojectEntities1 entities = new YMprojectEntities1())
                 {
-                    Traveler traveler = entities.Travelers.First(t => t.TravelerID == id);
+                    Traveler traveler = entities.Travelers.Include(t=>t.User).First(t => t.TravelerID == id);
                     return traveler;
                 }
             }
             catch { return null; }
         }
-
+    
 
 
 
