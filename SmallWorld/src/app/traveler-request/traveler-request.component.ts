@@ -7,6 +7,7 @@ import { ServiceTypeService } from '../services/service-type.service';
 import { Request } from '../models/Request';
 import { RequestService } from '../services/request.service';
 import { HoursRange } from '../models/HoursRange';
+import { AgeRange } from '../models/AgeRange';
 
 @Component({
   selector: 'app-traveler-request',
@@ -32,16 +33,30 @@ export class TravelerRequestComponent implements OnInit {
     floor: 0,
     ceil: 24
   };
+  value_age: number = 40;
+  highValue_age: number = 60;
+  options_age: Options = {
+    floor: 0,
+    ceil: 120
+  };
   form = new FormGroup({
     country: new FormControl('', Validators.required),
     city: new FormControl(''),
     street: new FormControl(''),
+    gender: new FormControl(''),
+
   });
+  changeRangeAge() {
+    this.rangeAge = !this.rangeAge;
+  }
   changeRangeHour() {
     this.rangeHour = !this.rangeHour;
   }
   get street(): any {
     return this.form.get('street');
+  }
+  get gender(): any {
+    return this.form.get('gender');
   }
 
   get city(): any {
@@ -67,11 +82,18 @@ export class TravelerRequestComponent implements OnInit {
       this.new_request.Street = this.form.get('street').value;
       this.new_request.City = this.form.get('city').value;
       this.new_request.Country = this.form.get('country').value;
+      if (this.rangeAge) {
+        this.new_request.RangeAge = new AgeRange;
+        this.new_request.RangeAge.MinAge = this.value_age;
+        this.new_request.RangeAge.MaxAge = this.highValue_age;
+      }
       if (this.rangeHour) {
         this.new_request.RangeHours = new HoursRange;
         this.new_request.RangeHours.StartHour = this.value_hours;
         this.new_request.RangeHours.MaxHour = this.highValue_hours;
       }
+      this.new_request.Gender = this.form.get('gender').value;
+
       this.new_request.servicesType = this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType });
       console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
       console.log("new_traveler_request: ", this.new_request)
