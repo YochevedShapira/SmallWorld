@@ -74,7 +74,8 @@
                                     {{getErrorMessageDetails_host()}} </mat-error>
                             </mat-form-field>
                         </p>
-                        <button type="submit" (click)="selectedIndex = 0" mat-button color="primary">Signup</button>
+                        <button type="submit" (click)="selectedIndex = 0" mat-button
+                            color="primary">{{text_button[index_status]}}</button>
                     </form>
                 </div>
             </mat-tab>
@@ -125,7 +126,8 @@
                                     {{getErrorMessageGender_traveler()}} </mat-error>
                             </mat-form-field>
                         </p>
-                        <button mat-button (click)="selectedIndex = 0" type="submit" color="primary">Signup</button>
+                        <button mat-button (click)="selectedIndex = 0" type="submit"
+                            color="primary">{{text_button[index_status]}}</button>
                     </form>
                 </div>
             </mat-tab>
