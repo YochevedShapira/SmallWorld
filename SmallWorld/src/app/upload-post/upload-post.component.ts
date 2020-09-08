@@ -18,7 +18,6 @@ import { AgeRange } from '../models/AgeRange';
 
 })
 export class UploadPostComponent implements OnInit {
-  @Input() status: boolean;
   constructor(private suggestionService: SuggestionService, private serviceTypeService: ServiceTypeService) { }
   ngOnInit() {
     console.log();
@@ -27,6 +26,7 @@ export class UploadPostComponent implements OnInit {
       this.index_status = 1;
     else this.index_status = 0;
   }
+  @Input() status: boolean;
   icons = ['cloud_upload', 'save']
   text_button = ['Upload', 'Save']
   index_status;
@@ -54,8 +54,8 @@ export class UploadPostComponent implements OnInit {
     country: new FormControl('', Validators.required),
     city: new FormControl('', Validators.required),
     street: new FormControl('', Validators.required),
-    details: new FormControl('',),
-    gender: new FormControl('',),
+    details: new FormControl(''),
+    gender: new FormControl(''),
 
   });
   changeRangeAge() {
