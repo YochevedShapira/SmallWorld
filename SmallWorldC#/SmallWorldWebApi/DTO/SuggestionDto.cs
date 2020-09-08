@@ -11,14 +11,15 @@ namespace DTO
         public int StartHour { get; set; }
         public int MaxHour { get; set; }
     }
+    public class AgeRange
+    {
+        public int MinAge { get; set; }
+        public int MaxAge { get; set; }
+    }
     public class SuggestionDto
     {
 
-        public class AgeRange
-        {
-            public int MinAge { get; set; }
-            public int MaxAge { get; set; }
-        }
+       
         
 
         public int SuggestionID { get; set; }
