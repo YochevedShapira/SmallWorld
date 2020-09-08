@@ -12,24 +12,25 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.0",
+<<<<<<< HEAD
     "@angular/cdk": "~10.2.0",
+=======
+    "@angular/cdk": "^10.2.0",
+>>>>>>> 5279415b8dc587b473f0ee0b2c28722ee07df21a
     "@angular/common": "~10.1.0",
     "@angular/compiler": "~10.1.0",
     "@angular/core": "~10.1.0",
     "@angular/forms": "~10.1.0",
+<<<<<<< HEAD
     "@angular/localize": "^10.1.0",
+=======
+>>>>>>> 5279415b8dc587b473f0ee0b2c28722ee07df21a
     "@angular/material": "^10.2.0",
     "@angular/platform-browser": "~10.1.0",
     "@angular/platform-browser-dynamic": "~10.1.0",
     "@angular/router": "~10.1.0",
-    "bootstrap": "^4.5.0",
-    "hammerjs": "^2.0.8",
-    "libphonenumber-js": "^1.7.55",
-    "mdbootstrap": "^4.19.1",
     "ng5-slider": "^1.2.4",
-    "ngx-daterange": "^1.0.29",
-    "ngx-mat-intl-tel-input": "^3.1.0",
-    "rxjs": "~6.6.3",
+    "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
@@ -37,12 +38,11 @@
     "@angular-devkit/build-angular": "~0.1001.0",
     "@angular/cli": "~10.1.0",
     "@angular/compiler-cli": "~10.1.0",
-    "@angular/language-service": "~10.1.0",
     "@types/node": "^12.11.1",
-    "@types/jasmine": "~3.3.8",
+    "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "^5.1.2",
-    "jasmine-core": "~3.5.0",
+    "codelyzer": "^6.0.0",
+    "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -50,7 +50,7 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
-    "ts-node": "~7.0.0",
+    "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
   }

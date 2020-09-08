@@ -1,11 +1,7 @@
-export class HoursRange {
-    StartHour: number;
-    MaxHour: number;
-}
-export class AgeRange {
-    MinAge: number;
-    MaxAge: number;
-}
+import { AgeRange } from './AgeRange';
+import { HoursRange } from './HoursRange';
+
+
 export class Suggestion {
     SuggestionID: number;
     HostId: number;

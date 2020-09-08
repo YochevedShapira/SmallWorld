@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HostPersonalAreaComponent implements OnInit {
 
   constructor() { }
+  panelOpenState = false;
 
   ngOnInit() {
   }

@@ -1,11 +1,16 @@
 import { Traveler } from './Traveler';
+import { HoursRange } from './HoursRange';
 
 export class Request {
     RequestID: number;
-    StartDate: Date;
-    EndDate: Date;
     TravelerID: number;
-    Traveler: Traveler;
+    RangeHours?: HoursRange;
+    Country?: string;
+    Street?: string;
+    City?: string;
+    servicesType: number[];
+    DateStart: Date;
+    DateEnd: Date;
     public Request() {
 
     }

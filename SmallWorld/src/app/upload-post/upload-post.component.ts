@@ -1,13 +1,15 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { SuggestionService } from '../services/suggestion.service';
 import { Validators, FormControl, FormGroup } from '@angular/forms';
 import { Options } from 'ng5-slider';
-import { Suggestion, AgeRange, HoursRange } from '../models/Suggestion';
+import { Suggestion } from '../models/Suggestion';
 import { User } from '../models/User';
 import { ServiceTypeService } from '../services/service-type.service';
 import { ServiceTypeMapper } from '../models/ServiceTypeMapper'
 import { range } from 'rxjs';
+import { HoursRange } from '../models/HoursRange';
+import { AgeRange } from '../models/AgeRange';
 @Component({
   selector: 'app-upload-post',
   templateUrl: './upload-post.component.html',
@@ -16,13 +18,18 @@ import { range } from 'rxjs';
 
 })
 export class UploadPostComponent implements OnInit {
-
+  @Input() status: boolean;
   constructor(private suggestionService: SuggestionService, private serviceTypeService: ServiceTypeService) { }
   ngOnInit() {
     console.log();
     this.serviceTypeService.resetList().subscribe((l: ServiceTypeMapper[]) => { this.toppingList = l; });
-
+    if (this.status)
+      this.index_status = 1;
+    else this.index_status = 0;
   }
+  icons = ['cloud_upload', 'save']
+  text_button = ['Upload', 'Save']
+  index_status;
   rangeAge = false;
   rangeHour = false;
   toppings = new FormControl();
@@ -125,7 +132,9 @@ export class UploadPostComponent implements OnInit {
       console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
 
       console.log("new_post: ", this.new_post)
-      this.suggestionService.post(this.new_post).subscribe(x => console.log('post ', x));
+      if (this.status)
+        this.suggestionService.post(this.new_post).subscribe(x => console.log('post ', x));
+      else this.suggestionService.put(this.new_post).subscribe(x => console.log('post ', x));
 
     }
   }
