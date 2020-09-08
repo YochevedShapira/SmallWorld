@@ -18,6 +18,7 @@ namespace DAL
         public Suggestion()
         {
             this.ServiceTypesToSuggestions = new HashSet<ServiceTypesToSuggestion>();
+            this.bookedDates = new HashSet<bookedDate>();
         }
     
         public int SuggestionID { get; set; }
@@ -35,5 +36,7 @@ namespace DAL
         public virtual HoursRange HoursRange { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ServiceTypesToSuggestion> ServiceTypesToSuggestions { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<bookedDate> bookedDates { get; set; }
     }
 }

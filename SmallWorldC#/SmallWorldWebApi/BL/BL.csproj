@@ -53,6 +53,7 @@
     <Compile Include="ManageSuggestion.cs" />
     <Compile Include="ManageTraveler.cs" />
     <Compile Include="ManageUser.cs" />
+    <Compile Include="Match.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

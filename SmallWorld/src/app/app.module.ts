@@ -31,6 +31,7 @@ import { UploadPostComponent } from './upload-post/upload-post.component';
 import { HostPersonalAreaComponent } from './host-personal-area/host-personal-area.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { Ng5SliderModule } from 'ng5-slider';
+import { NgxDateRangeModule } from 'ngx-daterange';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { Ng5SliderModule } from 'ng5-slider';
     MatSelectModule,
     MatExpansionModule,
     Ng5SliderModule,
-
+    NgxDateRangeModule,
+    ReactiveFormsModule,
 
   ],
   providers: [

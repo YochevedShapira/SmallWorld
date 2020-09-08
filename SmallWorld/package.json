@@ -26,6 +26,7 @@
     "libphonenumber-js": "^1.7.55",
     "mdbootstrap": "^4.19.1",
     "ng5-slider": "^1.2.4",
+    "ngx-daterange": "^1.0.29",
     "ngx-mat-intl-tel-input": "^3.1.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
