@@ -31,6 +31,8 @@ import { UploadPostComponent } from './upload-post/upload-post.component';
 import { HostPersonalAreaComponent } from './host-personal-area/host-personal-area.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { Ng5SliderModule } from 'ng5-slider';
+import { TravelerRequestComponent } from './traveler-request/traveler-request.component';
+import { TravelerPersonalAreaComponent } from './traveler-personal-area/traveler-personal-area.component';
 
 
 @NgModule({
@@ -41,6 +43,8 @@ import { Ng5SliderModule } from 'ng5-slider';
     HomeComponent,
     UploadPostComponent,
     HostPersonalAreaComponent,
+    TravelerRequestComponent,
+    TravelerPersonalAreaComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,6 @@ import { Ng5SliderModule } from 'ng5-slider';
     MatSelectModule,
     MatExpansionModule,
     Ng5SliderModule,
-
 
   ],
   providers: [

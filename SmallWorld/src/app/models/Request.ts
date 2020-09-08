@@ -1,11 +1,14 @@
 import { Traveler } from './Traveler';
+import { HoursRange } from './Suggestion';
 
 export class Request {
     RequestID: number;
-    StartDate: Date;
-    EndDate: Date;
     TravelerID: number;
-    Traveler: Traveler;
+    RangeHours?: HoursRange;
+    Country?: string;
+    Street?: string;
+    City?: string;
+    servicesType: number[];
     public Request() {
 
     }

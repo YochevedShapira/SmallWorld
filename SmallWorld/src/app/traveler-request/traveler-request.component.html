@@ -1,17 +1,8 @@
 <div class="center">
     <mat-card>
         <p class="title-text">
-            Post-Details: </p>
+            Request: </p>
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
-
-            <p>
-                <mat-form-field class="form-field">
-                    <mat-label>Title</mat-label>
-                    <input type=" text" matInput formControlName="title" required>
-                    <mat-error *ngIf="title.invalid">
-                        {{getErrorMessageTitle()}} </mat-error>
-                </mat-form-field>
-            </p>
             <p>
                 <mat-form-field class="location">
                     <mat-label>Street</mat-label>
@@ -33,13 +24,6 @@
                 </mat-form-field>
             </p>
 
-            <p>
-                <mat-form-field class="form-field">
-                    <mat-label>Details</mat-label>
-                    <textarea #details formControlName="details" matInput></textarea>
-
-                </mat-form-field>
-            </p>
             <div style="width: 500px;margin: auto;">
                 <h5 style="text-align: left;color: gray;">Parameters:</h5>
             </div>
@@ -56,17 +40,6 @@
             </p>
             <p class="p">
 
-                <mat-label>Range of Age</mat-label>
-                <span>
-                    <mat-checkbox color="primary" (click)="changeRangeAge()"></mat-checkbox>
-                </span>
-
-                <ng5-slider *ngIf="rangeAge" [(value)]="value_age" [(highValue)]="highValue_age"
-                    [options]="options_age"></ng5-slider>
-
-            </p>
-            <p class="p">
-
                 <mat-label>Range of Hours</mat-label>
                 <span>
                     <mat-checkbox color="primary" (click)="changeRangeHour()"></mat-checkbox>
@@ -76,20 +49,7 @@
                 </ng5-slider>
 
             </p>
-
-            <p>
-                <mat-form-field class="form-field">
-                    <mat-label> Gender</mat-label>
-                    <mat-select #gender formControlName="gender">
-                        <mat-option value="female">female</mat-option>
-                        <mat-option value="male">male</mat-option>
-                    </mat-select>
-                    <mat-icon matSuffix>arrow_drop_down</mat-icon>
-                </mat-form-field>
-            </p>
-            <button mat-button type="submit" color="primary">{{text_button[index_status]}} <mat-icon>
-                    {{icons[index_status]}}
-                </mat-icon></button>
+            <button mat-button type="submit" color="primary">Request <mat-icon>search</mat-icon></button>
 
         </form>
     </mat-card>

@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'SmallWorld';
   index = 0
   ngOnInit() {
-    // this.serviceTypeService.resetList();
   };
+
 }
 
