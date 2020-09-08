@@ -14,7 +14,8 @@ namespace SmallWorldWebApi.Controllers
         public List<SuggestionDto> GetSuggestions(RequestDto requestDto)
         {
             requestDto.Traveler = BL.ManageTraveler.GetTraveler(requestDto.TravelerID);
-            requestDto.Age = DateTime.Now.Year - requestDto.Traveler.BirthDate.Year;
+          return BL.Match.GetMatchingSuggestions(requestDto);
+
 
         }
     }

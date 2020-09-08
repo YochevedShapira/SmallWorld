@@ -8,9 +8,10 @@ namespace BL
 {
    public static class Match
     {
-        public List<SuggestionDto> GetMatchingSuggestions()
+        public static List<SuggestionDto> GetMatchingSuggestions(RequestDto requestDto)
         {
-
+          return  DAL.Match.GetMatchingSuggestions(requestDto).ConvertAll<SuggestionDto>(s =>
+            { return Suggestion.ToDTO(s); });
         }
     }
 }
