@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "smallWorld"
+  "defaultProject": "smallWorld",
+  "cli": {
+    "analytics": "f669bfa3-c696-4b7d-9d10-ab7542aec92c"
+  }
 }
