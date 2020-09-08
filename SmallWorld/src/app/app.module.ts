@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { HttpClient, HttpHeaders, HttpErrorResponse, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuInterceptor } from '../app/auth.interceptor'
+import { HomeComponent } from './home/home.component';
+import { UploadPostComponent } from './upload-post/upload-post.component';
+import { HostPersonalAreaComponent } from './host-personal-area/host-personal-area.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -26,13 +29,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
-import { HomeComponent } from './home/home.component';
-import { UploadPostComponent } from './upload-post/upload-post.component';
-import { HostPersonalAreaComponent } from './host-personal-area/host-personal-area.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { Ng5SliderModule } from 'ng5-slider';
 import { TravelerRequestComponent } from './traveler-request/traveler-request.component';
 import { TravelerPersonalAreaComponent } from './traveler-personal-area/traveler-personal-area.component';
+
 
 
 @NgModule({

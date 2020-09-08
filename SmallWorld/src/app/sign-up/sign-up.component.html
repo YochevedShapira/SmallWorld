@@ -107,8 +107,8 @@
                             <mat-form-field>
                                 <mat-label>BirthDate</mat-label>
                                 <input matInput formControlName="birthDate" [matDatepicker]="picker_1" required>
-                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                                <mat-datepicker #picker></mat-datepicker>
+                                <mat-datepicker-toggle matSuffix [for]="picker_1"></mat-datepicker-toggle>
+                                <mat-datepicker #picker_1></mat-datepicker>
                                 <mat-error *ngIf="birthDate_traveler.invalid">
                                     {{getErrorMessageBirthDate_traveler()}} </mat-error>
                             </mat-form-field>

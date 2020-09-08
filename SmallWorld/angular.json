@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SmallWorld": {
+    "smallWorld": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SmallWorld",
+            "outputPath": "dist/smallWorld",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SmallWorld:build"
+            "browserTarget": "smallWorld:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "SmallWorld:build:production"
+              "browserTarget": "smallWorld:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SmallWorld:build"
+            "browserTarget": "smallWorld:build"
           }
         },
         "test": {
@@ -116,19 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SmallWorld:serve"
+            "devServerTarget": "smallWorld:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SmallWorld:serve:production"
+              "devServerTarget": "smallWorld:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "SmallWorld",
-  "cli": {
-    "analytics": "461a66b3-f6be-43c2-849a-bec94df58ba0"
-  }
+  "defaultProject": "smallWorld"
 }

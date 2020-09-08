@@ -9,13 +9,13 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./log-in.component.scss']
 })
 export class LogInComponent implements OnInit {
-  constructor(private authService: AuthService) { }
+  constructor(public authService: AuthService) { }
   hide = true;
-  
+
   ngOnInit() {
     //this.UserService.GET().subscribe(x=>console.log("xxx:   ",x));
   }
-  
+
   //@ViewChild('title_page', { static: true }) title_page: ElementRef;
   @ViewChild('header', { static: true }) header: ElementRef;
   @ViewChild('colorPicker', { static: true }) colorPicker: ElementRef;
@@ -23,7 +23,7 @@ export class LogInComponent implements OnInit {
 
 
 
- changeColor() {
+  changeColor() {
     this.header.nativeElement.setAttribute('style', `background:${this.colorPicker.nativeElement.value}`)
   }
 
@@ -55,7 +55,7 @@ export class LogInComponent implements OnInit {
   }
   onSubmit() {
     console.log("????!!!!");
-    
+
     console.log(this.form.value);
     //console.log(this.title_page.nativeElement.innerHTML);
     if (this.form.get('name').value && this.form.get('password').value) {
