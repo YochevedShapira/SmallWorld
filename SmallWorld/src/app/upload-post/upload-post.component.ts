@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { SuggestionService } from '../services/suggestion.service';
@@ -10,107 +11,24 @@ import { ServiceTypeMapper } from '../models/ServiceTypeMapper'
 import { range } from 'rxjs';
 import { HoursRange } from '../models/HoursRange';
 import { AgeRange } from '../models/AgeRange';
+=======
+import { Component, OnInit } from '@angular/core';
+
+>>>>>>> b4215ca5b2bcd13dd7f99897624394f0fc05a4c6
 @Component({
   selector: 'app-upload-post',
   templateUrl: './upload-post.component.html',
   styleUrls: ['./upload-post.component.scss'],
-  providers: [ServiceTypeService]
 
 })
 export class UploadPostComponent implements OnInit {
-  constructor(private suggestionService: SuggestionService, private serviceTypeService: ServiceTypeService) { }
-  ngOnInit() {
-    console.log();
-    this.serviceTypeService.resetList().subscribe((l: ServiceTypeMapper[]) => { this.toppingList = l; });
-    if (this.status)
-      this.index_status = 1;
-    else this.index_status = 0;
-  }
-  @Input() status: boolean;
+  constructor() {
 
-  icons = ['cloud_upload', 'save']
-  text_button = ['Upload', 'Save']
-  index_status;
-  rangeAge = false;
-  rangeHour = false;
-  toppings = new FormControl();
-  toppingList: ServiceTypeMapper[];
-  new_post: Suggestion = new Suggestion;
-  value_age: number = 40;
-  highValue_age: number = 60;
-  options_age: Options = {
-    floor: 0,
-    ceil: 120
-  };
-  range = new FormGroup({
-    start: new FormControl(),
-    end: new FormControl()
-  });
-  value_hours: number = 10;
-  highValue_hours: number = 15;
-  options_hours: Options = {
-    floor: 0,
-    ceil: 24
-  };
-
-  form = new FormGroup({
-    title: new FormControl('', [Validators.required, Validators.minLength(2)]),
-    country: new FormControl('', Validators.required),
-    city: new FormControl('', Validators.required),
-    street: new FormControl('', Validators.required),
-    details: new FormControl(''),
-    gender: new FormControl(''),
-
-  });
-  changeRangeAge() {
-    this.rangeAge = !this.rangeAge;
-  } changeRangeHour() {
-    this.rangeHour = !this.rangeHour;
   }
-  get details(): any {
-    return this.form.get('details');
-  } get gender(): any {
-    return this.form.get('gender');
-  }
-  get title(): any {
-    return this.form.get('title');
-  }
-  get street(): any {
-    return this.form.get('street');
+  ngOnInit(): void {
   }
 
-  get city(): any {
-    return this.form.get('city');
-  }
-
-  get country(): any {
-    return this.form.get('country');
-  }
-
-  getErrorMessageTitle() {
-    if (this.title.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return this.title.invalid ? 'Not a valid title' : '';
-  } getErrorMessageCountry() {
-    if (this.country.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return this.country.invalid ? 'Not a valid country' : '';
-  }
-  getErrorMessageCity() {
-    if (this.city.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return this.city.invalid ? 'Not a valid city' : '';
-  }
-  getErrorMessageStreet() {
-    if (this.street.hasError('required')) {
-      return 'You must enter a value';
-    }
-    return this.street.invalid ? 'Not a valid street' : '';
-  }
-
+<<<<<<< HEAD
   onSubmit() {
 
     if (this.form.get('title').value && this.form.get('country').value && this.form.get('city').value && this.form.get('street').value) {
@@ -142,4 +60,6 @@ export class UploadPostComponent implements OnInit {
 
     }
   }
+=======
+>>>>>>> b4215ca5b2bcd13dd7f99897624394f0fc05a4c6
 }

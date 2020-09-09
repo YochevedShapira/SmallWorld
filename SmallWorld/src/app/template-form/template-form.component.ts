@@ -7,12 +7,11 @@ import { Traveler } from '../models/Traveler';
 import { TravelerService } from '../services/traveler.service';
 
 @Component({
-  selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.scss']
+  selector: 'app-template-form',
+  templateUrl: './template-form.component.html',
+  styleUrls: ['./template-form.component.scss']
 })
-export class SignUpComponent implements OnInit {
-<<<<<<< HEAD
+export class TemplateFormComponent implements OnInit {
   @Input() status_user: string;
   @Input() status: boolean;
 
@@ -26,8 +25,6 @@ export class SignUpComponent implements OnInit {
   constructor(private authService: AuthService, private hostService: HostService, private travelerService: TravelerService) { }
 
   ngOnInit() {
-    console.log('status:', this.status);
-
     if (this.status_user == 'traveler')
       this.selectedIndex = 1
     if (this.status)
@@ -93,10 +90,10 @@ export class SignUpComponent implements OnInit {
         this.host_to_add.UserName = this.form_host.get('name').value;
         // this.authService.post(this.host_to_add);
         console.log(this.host_to_add);
-        //  if (this.status)
-        this.hostService.post(this.host_to_add);
-        //  else
-        //   this.hostService.put(this.host_to_add);
+        if (this.status)
+          this.hostService.post(this.host_to_add);
+        else
+          this.hostService.put(this.host_to_add);
 
       }
     }
@@ -112,10 +109,10 @@ export class SignUpComponent implements OnInit {
       this.traveler_to_add.BirthDate = this.form_traveler.get('birthDate').value;
       this.traveler_to_add.UserName = this.form_traveler.get('name').value;
       console.log(this.traveler_to_add);
-      // if (this.status)
-      this.travelerService.post(this.traveler_to_add);
-      // else
-      // this.travelerService.put(this.traveler_to_add);
+      if (this.status)
+        this.travelerService.post(this.traveler_to_add);
+      else
+        this.travelerService.put(this.traveler_to_add);
 
     }
     else console.log('hello', (this.form_host.get('name').value != null && this.form_host.get('password').value != null
@@ -175,10 +172,46 @@ export class SignUpComponent implements OnInit {
 
   get name_traveler(): any {
     return this.form_host.get('name');
-=======
-  constructor() {
->>>>>>> b4215ca5b2bcd13dd7f99897624394f0fc05a4c6
   }
-  ngOnInit(): void {
+
+  get password_traveler(): any {
+    return this.form_host.get('password');
+  }
+  get email_traveler(): any {
+    return this.form_host.get('email');
+  }
+  get birthDate_traveler(): any {
+    return this.form_host.get('birthDate');
+  }
+  get gender_traveler(): any {
+    return this.form_host.get('gender');
+  }
+
+  getErrorMessageName_traveler() {
+    if (this.name_traveler.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.name_traveler.invalid ? 'Not a valid name' : '';
+  }
+  getErrorMessagePassword_traveler() {
+    if (this.password_traveler.hasError('required')) {
+      return 'You must enter a value';
+    }
+    return this.password_traveler.invalid ? 'Not a valid password' : '';
+  }
+  getErrorMessageBirthDate_traveler() {
+    if (this.birthDate_traveler.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.birthDate_traveler.invalid ? 'Not a valid birthDate' : '';
+  }
+  getErrorMessageGender_traveler() {
+    if (this.gender_traveler.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.gender_traveler.invalid ? 'Not a valid gender' : '';
   }
 }
