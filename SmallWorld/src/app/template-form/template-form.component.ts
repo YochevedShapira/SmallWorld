@@ -88,7 +88,6 @@ export class TemplateFormComponent implements OnInit {
         this.host_to_add.HostTextDetails = this.form_host.get('details').value;
         this.host_to_add.HostPassword = this.form_host.get('password').value;
         this.host_to_add.UserName = this.form_host.get('name').value;
-        // this.authService.post(this.host_to_add);
         console.log(this.host_to_add);
         if (this.status)
           this.hostService.post(this.host_to_add);
