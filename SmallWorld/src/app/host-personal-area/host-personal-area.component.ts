@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Suggestion } from '../models/Suggestion';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-host-personal-area',
@@ -7,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HostPersonalAreaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
   panelOpenState = false;
+  suggestion: Suggestion;
 
-  ngOnInit() {
+  edit(suggestion: Suggestion) {
+    this.router.navigate(['/edit-post', { data: JSON.stringify(suggestion) }])
   }
-
+  ngOnInit() {
+    this.suggestion = JSON.parse(this.route.snapshot.paramMap.get('data'));
+  }
 }

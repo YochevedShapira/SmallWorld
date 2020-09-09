@@ -33,6 +33,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { Ng5SliderModule } from 'ng5-slider';
 import { TravelerRequestComponent } from './traveler-request/traveler-request.component';
 import { TravelerPersonalAreaComponent } from './traveler-personal-area/traveler-personal-area.component';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { TemplatePostComponent } from './template-post/template-post.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
 
 
 
@@ -46,6 +49,9 @@ import { TravelerPersonalAreaComponent } from './traveler-personal-area/traveler
     HostPersonalAreaComponent,
     TravelerRequestComponent,
     TravelerPersonalAreaComponent,
+    TemplateFormComponent,
+    TemplatePostComponent,
+    EditPostComponent,
   ],
   imports: [
     BrowserModule,

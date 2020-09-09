@@ -16,13 +16,9 @@ export class AuthService {
   ) { }
 
   post(host: Host) {
-    alert("hjggfgxfcvbnm");
-    console.log("here!!");
-    
     this.http.post(environment.apiUrl + "Host/", host)
       .subscribe((token: string) => {
         localStorage.setItem(this.key, token);
-        //console.log("thats the new host:",token);
         this.message.error = "";
         this.router.navigate(['/home']);
       });
@@ -42,22 +38,21 @@ export class AuthService {
     let user = new User();
     user.UserName = name;
     user.UserPassword = password;
-
     this
       .http
-      .post(`${environment.apiUrl}/Login`,user)
+      .post(`${environment.apiUrl}/Login`, user)
       .subscribe((currentUser: User) => {
         localStorage.setItem(this.key, JSON.stringify(currentUser));
         console.log("111");
         console.log(currentUser.UserStaus);
         console.log(Status.Host);
         console.log("222");
-        
-        if(currentUser.UserStaus==Status.Host)
-        console.log("host!!!!!!!!");
-        if (currentUser.UserStaus==Status.Traveler)
-        console.log("travelerrrrrr!!!!!!");
-        
+
+        if (currentUser.UserStaus == Status.Host)
+          console.log("host!!!!!!!!");
+        if (currentUser.UserStaus == Status.Traveler)
+          console.log("travelerrrrrr!!!!!!");
+
         this.message.error = "";
         this.router.navigate(['/home']);
       },

@@ -1,5 +1,6 @@
 import { AgeRange } from './AgeRange';
 import { HoursRange } from './HoursRange';
+import { bookedDate } from './bookedDate';
 
 
 export class Suggestion {
@@ -14,6 +15,7 @@ export class Suggestion {
     Street?: string;
     City?: string;
     servicesType: number[];
+    bookedDates: bookedDate[];
 
     public Suggestion() {
 
