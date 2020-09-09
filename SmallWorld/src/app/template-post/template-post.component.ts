@@ -157,13 +157,14 @@ export class TemplatePostComponent implements OnInit {
       //console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
 
       console.log("new_post: ", this.new_post)
-      // if (this.status)
-      //  this.suggestionService.post(this.new_post).subscribe(x => console.log('post ', x));
-      // else
-      this.router.navigate(['/host-personal-area', { data: JSON.stringify(this.new_post) }]);
+      //  if (this.status)
+      //   this.suggestionService.post(this.new_post).subscribe(x => console.log('post ', x));
+      //  else
+      {
+        this.router.navigate(['/host-personal-area', { data: JSON.stringify(this.new_post) }]);
 
-      //this.suggestionService.put(this.new_post).subscribe(x => console.log('post ', x));
-
+        // this.suggestionService.put(this.new_post).subscribe(x => console.log('post ', x));
+      }
     }
   }
 

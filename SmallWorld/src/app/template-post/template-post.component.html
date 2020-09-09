@@ -86,8 +86,14 @@
                     </mat-select>
                     <mat-icon matSuffix>arrow_drop_down</mat-icon>
                 </mat-form-field>
+
             </p>
-            <p>
+
+            <p class="p">
+                <mat-label>booked Dates</mat-label> <button mat-icon-button
+                    aria-label="Example icon button with a vertical three dot icon">
+                    <mat-icon>add_box</mat-icon>
+                </button>
                 <mat-form-field class="form-field">
                     <mat-label>Enter a date range</mat-label>
                     <mat-date-range-input [formGroup]="range" [rangePicker]="picker">

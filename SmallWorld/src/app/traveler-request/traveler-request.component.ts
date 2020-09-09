@@ -83,18 +83,18 @@ export class TravelerRequestComponent implements OnInit {
       this.new_request.City = this.form.get('city').value;
       this.new_request.Country = this.form.get('country').value;
       if (this.rangeAge) {
-        this.new_request.RangeAge = new AgeRange;
-        this.new_request.RangeAge.MinAge = this.value_age;
-        this.new_request.RangeAge.MaxAge = this.highValue_age;
+        this.new_request.AgeRange = new AgeRange;
+        this.new_request.AgeRange.MinAge = this.value_age;
+        this.new_request.AgeRange.MaxAge = this.highValue_age;
       }
       if (this.rangeHour) {
-        this.new_request.RangeHours = new HoursRange;
-        this.new_request.RangeHours.StartHour = this.value_hours;
-        this.new_request.RangeHours.MaxHour = this.highValue_hours;
+        this.new_request.HoursRange = new HoursRange;
+        this.new_request.HoursRange.StartHour = this.value_hours;
+        this.new_request.HoursRange.MaxHour = this.highValue_hours;
       }
       this.new_request.Gender = this.form.get('gender').value;
 
-      this.new_request.servicesType = this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType });
+      this.new_request.ServicesTypes = this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType });
       console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
       console.log("new_traveler_request: ", this.new_request)
       this.requestService.post(this.new_request).subscribe(x => console.log('request ', x));
