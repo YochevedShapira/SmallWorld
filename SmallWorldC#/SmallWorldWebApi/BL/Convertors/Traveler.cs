@@ -18,8 +18,9 @@ namespace BL
                 TravelerName = model.TravelerName,
                 BirthDate = model.BirthDate,
                 gender = model.gender,
-               //UserDto= BL.User.ToDTO(model.User)
-                // Requests = model.Requests, 
+                UserName=model.TravelerName,
+                TravelerPassword=model.User.UserPassword
+               
             };
        
         }

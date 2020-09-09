@@ -3,7 +3,7 @@ import { AuthService } from '../services/auth.service';
 import { SuggestionService } from '../services/suggestion.service';
 import { Validators, FormControl, FormGroup } from '@angular/forms';
 import { Options } from 'ng5-slider';
-import { Suggestion } from '../models/Suggestion';
+import { Suggestion, bookedDate } from '../models/Suggestion';
 import { User } from '../models/User';
 import { ServiceTypeService } from '../services/service-type.service';
 import { ServiceTypeMapper } from '../models/ServiceTypeMapper'
@@ -136,9 +136,9 @@ export class UploadPostComponent implements OnInit {
       console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
 
       console.log("new_post: ", this.new_post)
-      if (this.status)
-        this.suggestionService.post(this.new_post).subscribe(x => console.log('post ', x));
-      else this.suggestionService.put(this.new_post).subscribe(x => console.log('post ', x));
+      // if (this.status)
+      this.suggestionService.post(this.new_post).subscribe(x => console.log('post ', x));
+      /// else this.suggestionService.put(this.new_post).subscribe(x => console.log('post ', x));
 
     }
   }

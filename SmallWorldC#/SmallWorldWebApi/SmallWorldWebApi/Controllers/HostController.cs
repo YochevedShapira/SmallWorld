@@ -21,7 +21,7 @@ namespace SmallWorldWebApi.Controllers
             HostDto h =  BL.ManageHost.SaveHost(hostDto);
                 if (h!=null)
                 // return Ok(BL.ManageHost.GetHost(hostDto.UserID));
-                return Ok<HostDto>(h);
+                return Ok(new UserDto() { UserID=h.HostID,UserName=h.UserName,UserPassword=h.HostPassword,UserStaus=Status.Host});
             return StatusCode(HttpStatusCode.InternalServerError);
         }
         [HttpPut]

@@ -25,6 +25,8 @@ export class SignUpComponent implements OnInit {
   constructor(private authService: AuthService, private hostService: HostService, private travelerService: TravelerService) { }
 
   ngOnInit() {
+    console.log('status:', this.status);
+
     if (this.status_user == 'traveler')
       this.selectedIndex = 1
     if (this.status)
@@ -90,10 +92,10 @@ export class SignUpComponent implements OnInit {
         this.host_to_add.UserName = this.form_host.get('name').value;
         // this.authService.post(this.host_to_add);
         console.log(this.host_to_add);
-        if (this.status)
-          this.hostService.post(this.host_to_add);
-        else
-          this.hostService.put(this.host_to_add);
+        //  if (this.status)
+        this.hostService.post(this.host_to_add);
+        //  else
+        //   this.hostService.put(this.host_to_add);
 
       }
     }
@@ -109,10 +111,10 @@ export class SignUpComponent implements OnInit {
       this.traveler_to_add.BirthDate = this.form_traveler.get('birthDate').value;
       this.traveler_to_add.UserName = this.form_traveler.get('name').value;
       console.log(this.traveler_to_add);
-      if (this.status)
-        this.travelerService.post(this.traveler_to_add);
-      else
-        this.travelerService.put(this.traveler_to_add);
+      // if (this.status)
+      this.travelerService.post(this.traveler_to_add);
+      // else
+      // this.travelerService.put(this.traveler_to_add);
 
     }
     else console.log('hello', (this.form_host.get('name').value != null && this.form_host.get('password').value != null

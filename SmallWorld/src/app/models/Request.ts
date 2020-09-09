@@ -5,12 +5,12 @@ import { AgeRange } from './AgeRange';
 export class Request {
     RequestID: number;
     TravelerID: number;
-    RangeHours?: HoursRange;
-    RangeAge?: AgeRange;
+    HoursRange?: HoursRange;
+    AgeRange?: AgeRange;
     Country?: string;
     Street?: string;
     City?: string;
-    servicesType: number[];
+    ServicesTypes: number[];
     Gender?: string;
     DateStart: Date;
     DateEnd: Date;

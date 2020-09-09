@@ -92,5 +92,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="bookedDates">
+      <EntityTypeMapping TypeName="YMprojectModel.bookedDate">
+        <MappingFragment StoreEntitySet="bookedDates">
+          <ScalarProperty Name="dateEnd" ColumnName="dateEnd" />
+          <ScalarProperty Name="dateStart" ColumnName="dateStart" />
+          <ScalarProperty Name="SuggestionId" ColumnName="SuggestionId" />
+          <ScalarProperty Name="bookedDateId" ColumnName="bookedDateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

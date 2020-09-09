@@ -15,7 +15,7 @@ namespace SmallWorldWebApi.Controllers
         {
           TravelerDto t=  BL.ManageTraveler.SaveTraveler(travelerDto);
             if (t != null)
-                return Ok(t);
+                return Ok(new UserDto() { UserID=t.TravelerID,UserName=t.UserName,UserPassword=t.TravelerPassword,UserStaus=Status.Traveler});
             return StatusCode(HttpStatusCode.InternalServerError);
 
         }

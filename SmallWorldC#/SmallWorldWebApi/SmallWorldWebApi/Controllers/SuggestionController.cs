@@ -14,6 +14,7 @@ namespace SmallWorldWebApi.Controllers
         [Route("Suggestion")]
         public IHttpActionResult AddSuggestion(SuggestionDto suggestionDto)
             {
+            ;
             SuggestionDto s = BL.ManageSuggestion.SaveSuggestion(suggestionDto);
             if (s != null) 
                 return Created<SuggestionDto>("The content inserted into the database successfully", s);
@@ -23,7 +24,7 @@ namespace SmallWorldWebApi.Controllers
         [Route("Suggestion")]
         public IHttpActionResult UpdateSuggestion(SuggestionDto suggestionDto)
         {
-
+            ;
             BL.ManageSuggestion.UpdateSuggestion(suggestionDto);
             return Ok(BL.ManageSuggestion.GetSuggestion(suggestionDto.SuggestionID));
         }
@@ -37,6 +38,7 @@ namespace SmallWorldWebApi.Controllers
         [Route("Suggestion")]
         public IHttpActionResult DeleteSuggestion(SuggestionDto suggestionDto)
         {
+            ;
             BL.ManageSuggestion.DeleteSuggestion(suggestionDto);
             return Ok(BL.ManageSuggestion.GetSuggestion(suggestionDto.SuggestionID));
         }

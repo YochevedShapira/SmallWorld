@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Traveler } from '../models/Traveler';
 import { environment } from 'src/environments/environment';
+import { User } from '../models/User';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class TravelerService {
   post(traveler: Traveler) {
     console.log("last valid:", traveler);
 
-    this.http.post(`${environment.apiUrl}/Traveler/post`, traveler).subscribe((t: Traveler) => {
+    this.http.post(`${environment.apiUrl}/Traveler/post`, traveler).subscribe((t: User) => {
       localStorage.setItem("currentUser", JSON.stringify(t));
       console.log("new traveler::", t);
       this.router.navigate(['/home']);
