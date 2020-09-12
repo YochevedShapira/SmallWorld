@@ -13,8 +13,8 @@ export class HostPersonalAreaComponent implements OnInit {
   panelOpenState = false;
   suggestion: Suggestion;
 
-  edit(suggestion: Suggestion) {
-    this.router.navigate(['/edit-post', { data: JSON.stringify(suggestion) }])
+  edit() {
+    this.router.navigate(['/edit-post', { data: JSON.stringify(this.suggestion) }])
   }
   ngOnInit() {
     this.suggestion = JSON.parse(this.route.snapshot.paramMap.get('data'));

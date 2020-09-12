@@ -11,6 +11,7 @@ import { range } from 'rxjs';
 import { HoursRange } from '../models/HoursRange';
 import { AgeRange } from '../models/AgeRange';
 import { Router } from '@angular/router';
+import { bookedDate } from '../models/bookedDate';
 @Component({
   selector: 'app-template-post',
   templateUrl: './template-post.component.html',
@@ -26,20 +27,57 @@ export class TemplatePostComponent implements OnInit {
       this.index_status = 1;
     else this.index_status = 0;
     if (this.suggestion != undefined) {
+      this.addDisable = false;
       this.form = new FormGroup({
         title: new FormControl(this.suggestion.Title, [Validators.required, Validators.minLength(2)]),
         country: new FormControl(this.suggestion.Country, Validators.required),
         city: new FormControl(this.suggestion.City, Validators.required),
         street: new FormControl(this.suggestion.Street, Validators.required),
-        details: new FormControl(this.suggestion.Description),
-        gender: new FormControl(this.suggestion.Gender),
+        details: new FormControl(this.suggestion.Description ? this.suggestion.Description : ''),
+        gender: new FormControl(this.suggestion.Gender ? this.suggestion.Gender : ''),
       });
-      this.value_age = this.suggestion.RangeAge.MinAge;
-      this.highValue_age = this.suggestion.RangeAge.MaxAge;
-      this.value_hours = this.suggestion.RangeHours.StartHour;
-      this.highValue_hours = this.suggestion.RangeHours.MaxHour;
+      if (this.suggestion.RangeAge) {
+        this.value_age = this.suggestion.RangeAge.MinAge;
+        this.highValue_age = this.suggestion.RangeAge.MaxAge;
+      }
+      else {
+        this.suggestion.RangeAge = new AgeRange;
+        this.suggestion.RangeAge.MinAge = 40;
+        this.suggestion.RangeAge.MaxAge = 60;
+      }
+      if (this.suggestion.RangeHours) {
+        this.value_hours = this.suggestion.RangeHours.StartHour;
+        this.highValue_hours = this.suggestion.RangeHours.MaxHour;
+      }
+      else {
+        this.suggestion.RangeHours = new HoursRange;
+        this.suggestion.RangeHours.StartHour = 10;
+        this.suggestion.RangeHours.MaxHour = 15
+      }
+      if (this.suggestion.bookedDates != undefined) {
+        if (this.suggestion.bookedDates.length > 0 && this.suggestion.bookedDates.length > 1) {
+          this.bookedDatesIsValue = true;
+          console.log('booked??? true', this.suggestion.bookedDates.length);
+        }
+        else if (this.suggestion.bookedDates.length > 0) {
+          this.range = new FormGroup(
+            {
+              start: new FormControl(this.suggestion.bookedDates[0].dateStart),
+              end: new FormControl(this.suggestion.bookedDates[0].dateEnd)
+            }
+          );
+        }
+      }
+      else {
+        this.range = new FormGroup({
+          start: new FormControl(),
+          end: new FormControl()
+        });
+      }
     }
     else {
+      console.log('חצוף!');
+      this.bookedDatesIsValue = false
       this.form = new FormGroup({
         title: new FormControl('', [Validators.required, Validators.minLength(2)]),
         country: new FormControl('', Validators.required),
@@ -52,10 +90,16 @@ export class TemplatePostComponent implements OnInit {
       this.highValue_age = 60;
       this.value_hours = 10;
       this.highValue_hours = 15;
+      this.range = new FormGroup({
+        start: new FormControl(),
+        end: new FormControl()
+      });
     }
   }
-
+  bookedDatesIsValue: boolean;
   form;
+  range: FormGroup;
+  addDisable: boolean = true;
   @Input() status: boolean;
   @Input() suggestion: Suggestion;
   icons = ['cloud_upload', 'save']
@@ -72,16 +116,14 @@ export class TemplatePostComponent implements OnInit {
     floor: 0,
     ceil: 120
   };
-  range = new FormGroup({
-    start: new FormControl(),
-    end: new FormControl()
-  });
-  value_hours: number = 10;
-  highValue_hours: number = 15;
+  bookedDates: Array<bookedDate>;
+  value_hours: number;
+  highValue_hours: number;
   options_hours: Options = {
     floor: 0,
     ceil: 24
   };
+  dateRange: bookedDate;
 
   changeRangeAge() {
     this.rangeAge = !this.rangeAge;
@@ -131,8 +173,37 @@ export class TemplatePostComponent implements OnInit {
     }
     return this.street.invalid ? 'Not a valid street' : '';
   }
+  x = 0;
 
+  addDates(newDates: bookedDate[]) {
+    console.log('templatr get dates: ', newDates);
+    this.bookedDates = new Array<bookedDate>();
+    this.bookedDates = newDates;
+  }
+  changeDate() {
+    if (this.range.get('start').value && this.range.get('end').value)
+      this.addDisable = false;
+  }
+  addNewDate() {
+    console.log('add-date-button');
+
+    let dateRange = new bookedDate;
+    dateRange.dateStart = this.range.get('start').value;
+    dateRange.dateEnd = this.range.get('end').value;
+    console.log('addNewDate(): ', dateRange);
+    this.suggestion = new Suggestion();
+    this.suggestion.bookedDates = new Array<bookedDate>();
+    this.suggestion.bookedDates.push(dateRange);
+    let newDate = new bookedDate;
+    this.suggestion.bookedDates.push(newDate);
+    console.log('??', this.suggestion, this.suggestion.bookedDates);
+
+    this.bookedDatesIsValue = true;
+    debugger;
+
+  }
   onSubmit() {
+    console.log('this.bookedDates ', this.bookedDates, ' onsubmit');
 
     if (this.form.get('title').value && this.form.get('country').value && this.form.get('city').value && this.form.get('street').value) {
       console.log("not-null");
@@ -142,6 +213,19 @@ export class TemplatePostComponent implements OnInit {
       this.new_post.City = this.form.get('city').value;
       this.new_post.Country = this.form.get('country').value;
       this.new_post.Description = this.form.get('details').value;
+      if (this.range.get('start').value != null) {
+        console.log('rande dont! empty', this.range.get('start').value);
+
+        this.dateRange = new bookedDate;
+        this.dateRange.dateStart = this.range.get('start').value;
+        this.dateRange.dateEnd = this.range.get('end').value;
+        this.new_post.bookedDates = new Array<bookedDate>();
+        this.new_post.bookedDates.push(this.dateRange);
+      }
+      else {
+        this.new_post.bookedDates = new Array<bookedDate>();
+        this.new_post.bookedDates = this.bookedDates;
+      }
       if (this.rangeAge) {
         this.new_post.RangeAge = new AgeRange;
         this.new_post.RangeAge.MinAge = this.value_age;
@@ -156,8 +240,9 @@ export class TemplatePostComponent implements OnInit {
       // this.new_post.servicesType = this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType });
       //console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
 
-      console.log("new_post: ", this.new_post)
+      console.log("new_post--: ", this.new_post)
       //  if (this.status)
+      // if (this.range.get('start').value && this.range.get('end').value)
       //   this.suggestionService.post(this.new_post).subscribe(x => console.log('post ', x));
       //  else
       {

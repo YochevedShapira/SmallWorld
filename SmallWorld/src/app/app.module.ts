@@ -36,6 +36,8 @@ import { TravelerPersonalAreaComponent } from './traveler-personal-area/traveler
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { TemplatePostComponent } from './template-post/template-post.component';
 import { EditPostComponent } from './edit-post/edit-post.component';
+import { DatePickerListComponent } from './date-picker-list/date-picker-list.component';
+import { DatePickerItemComponent } from './date-picker-item/date-picker-item.component';
 
 
 
@@ -52,6 +54,8 @@ import { EditPostComponent } from './edit-post/edit-post.component';
     TemplateFormComponent,
     TemplatePostComponent,
     EditPostComponent,
+    DatePickerListComponent,
+    DatePickerItemComponent,
   ],
   imports: [
     BrowserModule,
