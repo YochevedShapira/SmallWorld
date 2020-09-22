@@ -2,7 +2,6 @@ import { AgeRange } from './AgeRange';
 import { HoursRange } from './HoursRange';
 import { bookedDate } from './bookedDate';
 
-
 export class Suggestion {
     SuggestionID: number;
     HostId: number;
@@ -16,7 +15,6 @@ export class Suggestion {
     City?: string;
     servicesType: number[];
     bookedDates: Array<bookedDate>;
-
     public Suggestion() {
 
 

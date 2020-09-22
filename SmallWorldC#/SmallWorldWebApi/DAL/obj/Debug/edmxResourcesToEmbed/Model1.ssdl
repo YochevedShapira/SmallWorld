@@ -17,6 +17,15 @@
     <Property Name="age_min" Type="int" Nullable="false" />
     <Property Name="age_max" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="bookedDates">
+    <Key>
+      <PropertyRef Name="bookedDateId" />
+    </Key>
+    <Property Name="bookedDateId" Type="int" Nullable="false" />
+    <Property Name="SuggestionId" Type="int" Nullable="false" />
+    <Property Name="dateStart" Type="datetime" />
+    <Property Name="dateEnd" Type="datetime" />
+  </EntityType>
   <EntityType Name="Hosts">
     <Key>
       <PropertyRef Name="HostID" />
@@ -82,6 +91,18 @@
     <Property Name="UserPassword" Type="nvarchar" MaxLength="50" />
     <Property Name="UserName" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <Association Name="FK__bookedDat__Sugge__49C3F6B7">
+    <End Role="Suggestions" Type="Self.Suggestions" Multiplicity="1" />
+    <End Role="bookedDates" Type="Self.bookedDates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suggestions">
+        <PropertyRef Name="SuggestionID" />
+      </Principal>
+      <Dependent Role="bookedDates">
+        <PropertyRef Name="SuggestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__Hosts__HostID__29572725">
     <End Role="Users" Type="Self.Users" Multiplicity="1" />
     <End Role="Hosts" Type="Self.Hosts" Multiplicity="0..1" />
@@ -181,6 +202,7 @@
   <EntityContainer Name="YMprojectModelStoreContainer">
     <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ageRange" EntityType="Self.ageRange" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bookedDates" EntityType="Self.bookedDates" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Hosts" EntityType="Self.Hosts" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HoursRange" EntityType="Self.HoursRange" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ServiceTypeList" EntityType="Self.ServiceTypeList" Schema="dbo" store:Type="Tables" />
@@ -188,6 +210,10 @@
     <EntitySet Name="Suggestions" EntityType="Self.Suggestions" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Travelers" EntityType="Self.Travelers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__bookedDat__Sugge__49C3F6B7" Association="Self.FK__bookedDat__Sugge__49C3F6B7">
+      <End Role="Suggestions" EntitySet="Suggestions" />
+      <End Role="bookedDates" EntitySet="bookedDates" />
+    </AssociationSet>
     <AssociationSet Name="FK__Hosts__HostID__29572725" Association="Self.FK__Hosts__HostID__29572725">
       <End Role="Users" EntitySet="Users" />
       <End Role="Hosts" EntitySet="Hosts" />

@@ -77,6 +77,7 @@
     <NavigationProperty Name="Host" Relationship="Self.FK__Suggestio__hostI__3A81B327" FromRole="Suggestions" ToRole="Hosts" />
     <NavigationProperty Name="HoursRange" Relationship="Self.FK__Suggestio__hours__398D8EEE" FromRole="Suggestions" ToRole="HoursRange" />
     <NavigationProperty Name="ServiceTypesToSuggestions" Relationship="Self.FK__ServiceTy__Sugge__3E52440B" FromRole="Suggestions" ToRole="ServiceTypesToSuggestions" />
+    <NavigationProperty Name="bookedDates" Relationship="YMprojectModel.FK__bookedDat__Sugge__49C3F6B7" FromRole="Suggestion" ToRole="bookedDate" />
   </EntityType>
   <EntityType Name="Traveler">
     <Key>
@@ -236,5 +237,32 @@
       <End Role="Users" EntitySet="Users" />
       <End Role="Travelers" EntitySet="Travelers" />
     </AssociationSet>
+    <EntitySet Name="bookedDates" EntityType="YMprojectModel.bookedDate" />
+    <AssociationSet Name="FK__bookedDat__Sugge__49C3F6B7" Association="YMprojectModel.FK__bookedDat__Sugge__49C3F6B7">
+      <End Role="Suggestion" EntitySet="Suggestions" />
+      <End Role="bookedDate" EntitySet="bookedDates" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="bookedDate">
+    <Key>
+      <PropertyRef Name="bookedDateId" />
+    </Key>
+    <Property Name="bookedDateId" Type="Int32" Nullable="false" />
+    <Property Name="SuggestionId" Type="Int32" Nullable="false" />
+    <Property Name="dateStart" Type="DateTime" Precision="3" />
+    <Property Name="dateEnd" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Suggestion" Relationship="YMprojectModel.FK__bookedDat__Sugge__49C3F6B7" FromRole="bookedDate" ToRole="Suggestion" />
+  </EntityType>
+  <Association Name="FK__bookedDat__Sugge__49C3F6B7">
+    <End Type="YMprojectModel.Suggestion" Role="Suggestion" Multiplicity="1" />
+    <End Type="YMprojectModel.bookedDate" Role="bookedDate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suggestion">
+        <PropertyRef Name="SuggestionID" />
+      </Principal>
+      <Dependent Role="bookedDate">
+        <PropertyRef Name="SuggestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

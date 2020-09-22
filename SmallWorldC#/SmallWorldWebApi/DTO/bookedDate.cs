@@ -1,8 +1,12 @@
-﻿using 
+﻿using System; 
 namespace DTO
 {
-    public class bookedDate
+    public class bookedDateDto
     {
-        //public Da MyProperty { get; set; }
+       
+        public DateTime dateStart { get; set; }
+        public DateTime dateEnd { get; set; }
+
+      
     }
 }

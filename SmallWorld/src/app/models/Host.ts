@@ -1,5 +1,3 @@
-import { User } from '../models/User';
-
 export class Host {
     HostID: number;
     HostName: string;

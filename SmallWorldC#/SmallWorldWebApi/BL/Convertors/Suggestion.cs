@@ -32,14 +32,14 @@ namespace BL
 
             };
             if (model.ageRange != null)
-                suggestionDto.RangeAge = new SuggestionDto.AgeRange()
+                suggestionDto.RangeAge = new AgeRange()
                 {
                     MaxAge = model.ageRange.age_max,
                     MinAge = model.ageRange.age_min,
 
                 };
             if (model.HoursRange != null)
-                suggestionDto.RangeHours = new SuggestionDto.HoursRange()
+                suggestionDto.RangeHours = new DTO.HoursRange()
                 {
                     MaxHour = model.HoursRange.hours_end,
                     StartHour = model.HoursRange.hours_start

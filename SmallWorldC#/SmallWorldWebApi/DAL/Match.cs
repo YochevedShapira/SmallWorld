@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
+using System.Data.Entity;
 namespace DAL
 {
     public static class Match
@@ -59,43 +60,51 @@ namespace DAL
         {
             return (input > date1 && input < date2);
         }
+        public static bool te(Suggestion s,RequestDto requestDto)
+        {
+
+            if (s.Address.country != requestDto.Country)
+            {
+                Console.WriteLine("country");
+                return false;
+            }
+            if ((requestDto.City != null && requestDto.City != s.Address.city) || (requestDto.Street != null && requestDto.Street != s.Address.street))
+                return false;
+            if (requestDto.Gender != null && s.gender != null && requestDto.Gender != s.gender)
+                return false;
+            foreach (var item in s.bookedDates)
+            {
+                if (item.dateEnd.Value.Between(requestDto.DateStart, requestDto.DateEnd) ||
+                item.dateStart.Value.Between(requestDto.DateStart, requestDto.DateEnd))
+                    return false;
+            }
+            if (s.HoursRange != null && requestDto.HoursRange != null)
+            {
+                if (!CalcRanges(s.HoursRange.hours_start, s.HoursRange.hours_end, requestDto.HoursRange.StartHour, requestDto.HoursRange.MaxHour))
+                    return false;
+            }
+            if (requestDto.AgeRange != null &&
+                !s.Host.BirthDate.AgeInYears().Between(requestDto.AgeRange.MinAge, requestDto.AgeRange.MaxAge))//גיל המארח לא מתאים להגדרת האורח
+                return false;
+
+            if (s.ageRange != null &&
+                !requestDto.Traveler.BirthDate.AgeInYears().Between(s.ageRange.age_min, s.ageRange.age_max))//גיל האורח לא מתאים להגדרת המארח
+                return false;
+
+
+
+            return true;
+        } 
         public static List<Suggestion> GetMatchingSuggestions(RequestDto requestDto)
         {
             try
             {
                 using (YMprojectEntities1 entities1 = new YMprojectEntities1())
                 {
-                    return entities1.Suggestions.Where(delegate (Suggestion s)
+                    
+                    return entities1.Suggestions.Include(i=>i.Address).Include(i=>i.ageRange).Include(i=>i.bookedDates).Include(i=>i.ServiceTypesToSuggestions).Include(i=>i.HoursRange).Include(i=>i.Host).Where(delegate (Suggestion s)
                      {
-                         if (s.Address.country != requestDto.Country)
-                             return false;
-                         if ((requestDto.City != null && requestDto.City != s.Address.city) || (requestDto.Street != null && requestDto.Street != s.Address.street))
-                             return false;
-                         if (requestDto.Gender != null && s.gender != null && requestDto.Gender != s.gender)
-                             return false;
-                         foreach (var item in s.bookedDates)
-                         {
-                             if (item.dateEnd.Value.Between(requestDto.DateStart, requestDto.DateEnd) ||
-                             item.dateStart.Value.Between(requestDto.DateStart, requestDto.DateEnd))
-                                 return false;
-                         }
-                         if (s.HoursRange != null && requestDto.HoursRange != null)
-                         {
-                             if (!CalcRanges(s.HoursRange.hours_start, s.HoursRange.hours_end, requestDto.HoursRange.StartHour, requestDto.HoursRange.MaxHour))
-                                 return false;
-                         }
-                         if (requestDto.AgeRange != null &&
-                             !s.Host.BirthDate.AgeInYears().Between(requestDto.AgeRange.MinAge, requestDto.AgeRange.MaxAge))//גיל המארח לא מתאים להגדרת האורח
-                         return false;
-
-                         if (s.ageRange != null &&
-                             !requestDto.Traveler.BirthDate.AgeInYears().Between(s.ageRange.age_min, s.ageRange.age_max))//גיל האורח לא מתאים להגדרת המארח
-                         return false;
-
-
-
-                         return true;
-
+                        return te(s, requestDto);
                      }).ToList();
                 }
             }

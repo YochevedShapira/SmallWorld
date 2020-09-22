@@ -43,6 +43,6 @@ namespace DTO
         public string City { get; set; }
         public string Street { get; set; }
         public int HostId { get; set; }
-       List<bookedDate>bookedDates { get; set; }
+       List<bookedDateDto>bookedDates { get; set; }
     }
 }
