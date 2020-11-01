@@ -34,6 +34,21 @@ namespace SmallWorldWebApi.Controllers
         {
             return Ok(BL.ManageSuggestion.GetSuggestion(id));
         }
+
+        [HttpGet]
+        [Route("Suggestions/{id}")]
+        public IHttpActionResult GetSuggestions([FromUri] int id)
+        {
+            return Ok(BL.ManageSuggestion.GetSuggestions(id));
+        }
+
+        [HttpGet]
+        [Route("SuggestionsAll")]
+        public IHttpActionResult GetSuggestionsAll()
+        {
+            return Ok(BL.ManageSuggestion.GetSuggestionsAll());
+        }
+
         [HttpDelete]
         [Route("Suggestion")]
         public IHttpActionResult DeleteSuggestion(SuggestionDto suggestionDto)

@@ -11,26 +11,51 @@ namespace BL
         public static SuggestionDto ToDTO(DAL.Suggestion model)
         {
             List<int> vs = new List<int>();
-            foreach (var item in model.ServiceTypesToSuggestions)
+            List<string> vss = new List<string>();
+            if (model.ServiceTypesToSuggestions.Count > 0)
             {
-                vs.Add(item.ServiceTypeListID);
+                foreach (var item in model.ServiceTypesToSuggestions)
+                {
+                    vs.Add(item.ServiceTypeListID);
+                }
+            }
+            if (model.ServiceTypesToSuggestions.Count > 0)
+            {
+                foreach (var item in model.ServiceTypesToSuggestions)
+                {
+                    vss.Add(item.ServiceTypeList.ServiceTypeName);
+                }
             }
 
-            SuggestionDto suggestionDto= new SuggestionDto()
+            SuggestionDto suggestionDto = new SuggestionDto()
             {
                 SuggestionID = model.SuggestionID,
                 Description = model.SuggestionDescreotion,
                 Gender = model.gender,
-               
+                ServicesTypeName = vss,
                 Title = model.SuggestionTitle,
                 ServicesType = vs,
                 City = model.Address.city,
                 Country = model.Address.country,
                 Street = model.Address.street,
                 HostId = model.hostId,
-
+                //boo
 
             };
+            List<bookedDateDto> bookedDateDto = new List<bookedDateDto>();
+            if (model.bookedDates != null && model.bookedDates.Count > 0)
+            {
+               
+                foreach (var item in model.bookedDates)
+                {
+                    bookedDateDto.Add(new DTO.bookedDateDto()
+                    {
+                        dateEnd = item.dateEnd.Value,
+                        dateStart = item.dateStart.Value
+                    });
+                }
+            }
+            suggestionDto.bookedDates = bookedDateDto;
             if (model.ageRange != null)
                 suggestionDto.RangeAge = new AgeRange()
                 {

@@ -9,6 +9,7 @@ namespace DAL
 {
     public static class Match
     {
+        public static DAL.YMprojectEntities1 entities1 = new YMprojectEntities1();
         private static bool Between(this int input, int num1, int num2)
         {
             return (input >= num1 && input <= num2);
@@ -70,7 +71,7 @@ namespace DAL
             }
             if ((requestDto.City != null && requestDto.City != s.Address.city) || (requestDto.Street != null && requestDto.Street != s.Address.street))
                 return false;
-            if (requestDto.Gender != null && s.gender != null && requestDto.Gender != s.gender)
+            if (requestDto.Gender != null&& requestDto.Gender!="" && s.gender != null && requestDto.Gender != s.gender)
                 return false;
             foreach (var item in s.bookedDates)
             {
@@ -99,14 +100,13 @@ namespace DAL
         {
             try
             {
-                using (YMprojectEntities1 entities1 = new YMprojectEntities1())
-                {
+
                     
                     return entities1.Suggestions.Include(i=>i.Address).Include(i=>i.ageRange).Include(i=>i.bookedDates).Include(i=>i.ServiceTypesToSuggestions).Include(i=>i.HoursRange).Include(i=>i.Host).Where(delegate (Suggestion s)
                      {
                         return te(s, requestDto);
                      }).ToList();
-                }
+                
             }
             catch (Exception e) { return null; }
         }

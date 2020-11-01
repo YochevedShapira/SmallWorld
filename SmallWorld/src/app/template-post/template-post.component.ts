@@ -18,8 +18,12 @@ import { bookedDate } from '../models/bookedDate';
   styleUrls: ['./template-post.component.scss']
 })
 export class TemplatePostComponent implements OnInit {
+  currentUser: User;
 
-  constructor(private suggestionService: SuggestionService, private serviceTypeService: ServiceTypeService, public router: Router) { }
+  constructor(private suggestionService: SuggestionService, private serviceTypeService: ServiceTypeService, public router: Router) {
+
+  }
+
   ngOnInit() {
     console.log('suggestion-template-post: ', this.suggestion);
     this.serviceTypeService.resetList().subscribe((l: ServiceTypeMapper[]) => { this.toppingList = l; });
@@ -109,7 +113,7 @@ export class TemplatePostComponent implements OnInit {
   rangeHour = false;
   toppings = new FormControl();
   toppingList: ServiceTypeMapper[];
-  new_post: Suggestion = new Suggestion;
+  new_post: Suggestion = new Suggestion();
   value_age: number;
   highValue_age: number;
   options_age: Options = {
@@ -127,7 +131,8 @@ export class TemplatePostComponent implements OnInit {
 
   changeRangeAge() {
     this.rangeAge = !this.rangeAge;
-  } changeRangeHour() {
+  }
+  changeRangeHour() {
     this.rangeHour = !this.rangeHour;
   }
   get details(): any {
@@ -187,14 +192,19 @@ export class TemplatePostComponent implements OnInit {
   addNewDate() {
     console.log('add-date-button');
 
-    let dateRange = new bookedDate;
+    let dateRange = new bookedDate();
     dateRange.dateStart = this.range.get('start').value;
     dateRange.dateEnd = this.range.get('end').value;
     console.log('addNewDate(): ', dateRange);
-    this.suggestion = new Suggestion();
-    this.suggestion.bookedDates = new Array<bookedDate>();
+    //this.suggestion = new Suggestion();
+    //this.suggestion.bookedDates = new Array<bookedDate>();
+    if (!this.suggestion) {
+      this.suggestion = new Suggestion();
+      this.suggestion.bookedDates = [];
+    }
+
     this.suggestion.bookedDates.push(dateRange);
-    let newDate = new bookedDate;
+    let newDate = new bookedDate();
     this.suggestion.bookedDates.push(newDate);
     console.log('??', this.suggestion, this.suggestion.bookedDates);
 
@@ -204,7 +214,7 @@ export class TemplatePostComponent implements OnInit {
   }
   onSubmit() {
     console.log('this.bookedDates ', this.bookedDates, ' onsubmit');
-
+    debugger;
     if (this.form.get('title').value && this.form.get('country').value && this.form.get('city').value && this.form.get('street').value) {
       console.log("not-null");
       // this.new_post.HostId = JSON.parse(localStorage.getItem('currentUser')).UserID;
@@ -226,29 +236,32 @@ export class TemplatePostComponent implements OnInit {
         this.new_post.bookedDates = new Array<bookedDate>();
         this.new_post.bookedDates = this.bookedDates;
       }
-      if (this.rangeAge) {
-        this.new_post.RangeAge = new AgeRange;
-        this.new_post.RangeAge.MinAge = this.value_age;
-        this.new_post.RangeAge.MaxAge = this.highValue_age;
-      }
-      if (this.rangeHour) {
-        this.new_post.RangeHours = new HoursRange;
-        this.new_post.RangeHours.StartHour = this.value_hours;
-        this.new_post.RangeHours.MaxHour = this.highValue_hours;
-      }
+      this.new_post.RangeAge = new AgeRange;
+      this.new_post.RangeAge.MinAge = this.value_age;
+      this.new_post.RangeAge.MaxAge = this.highValue_age;
+
+      this.new_post.RangeHours = new HoursRange;
+      this.new_post.RangeHours.StartHour = this.value_hours;
+      this.new_post.RangeHours.MaxHour = this.highValue_hours;
+
       this.new_post.Gender = this.form.get('gender').value;
-      // this.new_post.servicesType = this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType });
-      //console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
+      this.new_post.servicesType = this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType });
+      console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
 
       console.log("new_post--: ", this.new_post)
-      //  if (this.status)
-      // if (this.range.get('start').value && this.range.get('end').value)
-      //   this.suggestionService.post(this.new_post).subscribe(x => console.log('post ', x));
-      //  else
-      {
-        this.router.navigate(['/host-personal-area', { data: JSON.stringify(this.new_post) }]);
-
-        // this.suggestionService.put(this.new_post).subscribe(x => console.log('post ', x));
+      debugger;
+      if (this.status) {
+        this.currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        this.new_post.HostId = this.currentUser.UserID;
+        this.suggestionService.post(this.new_post).subscribe(x => {
+          this.router.navigate(['/home-host']);
+        });
+      }
+      else {
+        this.new_post.SuggestionID=this.suggestion.SuggestionID;
+        this.suggestionService.put(this.new_post).subscribe(x => {
+            this.router.navigate(['/home-host']);
+        });
       }
     }
   }

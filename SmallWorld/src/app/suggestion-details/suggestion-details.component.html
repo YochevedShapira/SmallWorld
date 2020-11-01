@@ -1,0 +1,24 @@
+<div class="p-4">
+    <h2 mat-dialog-title>{{suggestion.Title}}</h2>
+
+    <mat-dialog-content>
+        <div>
+            <p><label>Description: </label> {{suggestion.Description}}</p>
+            <p><label>Range Age: </label> {{suggestion.RangeAge.MinAge}}-{{suggestion.RangeAge.MaxAge}}</p>
+            <p><label>Range Houre: </label> {{suggestion.RangeHours.StartHour}}-{{suggestion.RangeHours.MaxHour}}</p>
+            <p><label>Gender: </label> {{suggestion.Gender}}</p>
+            <p><label>Address:</label> {{suggestion.Country}} {{suggestion.City}} {{suggestion.Street}}</p>
+            <p><label>servicesType: </label>
+                <span *ngFor="let i of suggestion.ServicesTypeName"> {{i}}, </span></p>
+            <p><label>Dates: </label>
+                <span *ngFor="let date of suggestion.bookedDates"> {{date.dateStart|date:'dd/mm/yy'}} -
+                    {{date.dateEnd|date:'dd/mm/yy'}}<br></span> </p>
+        </div>
+
+
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+        <button class="mat-raised-button" style="left: 11vw;" (click)="close()">Close</button>
+    </mat-dialog-actions>
+</div>

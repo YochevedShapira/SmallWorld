@@ -4,21 +4,19 @@ import { Router } from '@angular/router';
 import { Traveler } from '../models/Traveler';
 import { environment } from 'src/environments/environment';
 import { User } from '../models/User';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TravelerService {
 
+  subjectLogin:Subject<boolean>=new Subject();
+
   constructor(private http: HttpClient, private router: Router) { }
   post(traveler: Traveler) {
     console.log("last valid:", traveler);
-
-    this.http.post(`${environment.apiUrl}/Traveler/post`, traveler).subscribe((t: User) => {
-      localStorage.setItem("currentUser", JSON.stringify(t));
-      console.log("new traveler::", t);
-      this.router.navigate(['/home']);
-    });
+   return this.http.post(`${environment.apiUrl}/Traveler/post`, traveler)
   }
   put(traveler: Traveler) {
     return this.http.put(`${environment.apiUrl}/Traveler`, traveler);

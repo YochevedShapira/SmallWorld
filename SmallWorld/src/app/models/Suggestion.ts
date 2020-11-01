@@ -14,9 +14,10 @@ export class Suggestion {
     Street?: string;
     City?: string;
     servicesType: number[];
-    bookedDates: Array<bookedDate>;
+    ServicesTypeName:string[]=[];
+    bookedDates: bookedDate[];
     public Suggestion() {
-
+        this.bookedDates=[]
 
     }
 }

@@ -9,6 +9,8 @@ import { HostPersonalAreaComponent } from './host-personal-area/host-personal-ar
 import { TravelerRequestComponent } from './traveler-request/traveler-request.component';
 import { TravelerPersonalAreaComponent } from './traveler-personal-area/traveler-personal-area.component';
 import { EditPostComponent } from './edit-post/edit-post.component';
+import { HomeHostComponent } from './home-host/home-host.component';
+import { RequestResultComponent } from './request-result/request-result.component';
 const routes: Routes = [
   { path: 'login', component: LogInComponent, data: { title: 'Log-in' } },
   { path: 'signup', component: SignUpComponent, data: { title: 'Sign-up' } },
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'traveler-personal-area', component: TravelerPersonalAreaComponent, data: { title: 'Traveler_PersonalArea' } },
   { path: 'edit-post', component: EditPostComponent, data: { title: 'Edit_Post' } },
   { path: 'home', component: HomeComponent, data: { title: 'Home' }, canActivate: [AuthLogin] },
+  { path: 'home-host', component: HomeHostComponent, data: { title: 'Home-Host' }, canActivate: [AuthLogin] },
+  { path: 'result', component: RequestResultComponent, canActivate: [AuthLogin] },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
 ];
 

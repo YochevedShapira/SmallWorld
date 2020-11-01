@@ -26,7 +26,7 @@
           <Key>
             <PropertyRef Name="bookedDateId" />
           </Key>
-          <Property Name="bookedDateId" Type="int" Nullable="false" />
+          <Property Name="bookedDateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SuggestionId" Type="int" Nullable="false" />
           <Property Name="dateStart" Type="datetime" />
           <Property Name="dateEnd" Type="datetime" />
@@ -96,7 +96,7 @@
           <Property Name="UserPassword" Type="nvarchar" MaxLength="50" />
           <Property Name="UserName" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <Association Name="FK__bookedDat__Sugge__49C3F6B7">
+        <Association Name="FK__bookedDat__Sugge__3D5E1FD2">
           <End Role="Suggestions" Type="Self.Suggestions" Multiplicity="1" />
           <End Role="bookedDates" Type="Self.bookedDates" Multiplicity="*" />
           <ReferentialConstraint>
@@ -120,7 +120,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ServiceTy__Servi__3D5E1FD2">
+        <Association Name="FK__ServiceTy__Servi__398D8EEE">
           <End Role="ServiceTypeList" Type="Self.ServiceTypeList" Multiplicity="1" />
           <End Role="ServiceTypesToSuggestions" Type="Self.ServiceTypesToSuggestions" Multiplicity="*" />
           <ReferentialConstraint>
@@ -132,7 +132,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__ServiceTy__Sugge__3E52440B">
+        <Association Name="FK__ServiceTy__Sugge__3A81B327">
           <End Role="Suggestions" Type="Self.Suggestions" Multiplicity="1" />
           <End Role="ServiceTypesToSuggestions" Type="Self.ServiceTypesToSuggestions" Multiplicity="*" />
           <ReferentialConstraint>
@@ -144,7 +144,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Suggestio__Adres__37A5467C">
+        <Association Name="FK__Suggestio__Adres__33D4B598">
           <End Role="Address" Type="Self.Address" Multiplicity="1" />
           <End Role="Suggestions" Type="Self.Suggestions" Multiplicity="*" />
           <ReferentialConstraint>
@@ -156,7 +156,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Suggestio__ageRa__38996AB5">
+        <Association Name="FK__Suggestio__ageRa__34C8D9D1">
           <End Role="ageRange" Type="Self.ageRange" Multiplicity="0..1" />
           <End Role="Suggestions" Type="Self.Suggestions" Multiplicity="*" />
           <ReferentialConstraint>
@@ -168,7 +168,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Suggestio__hostI__3A81B327">
+        <Association Name="FK__Suggestio__hostI__36B12243">
           <End Role="Hosts" Type="Self.Hosts" Multiplicity="1" />
           <End Role="Suggestions" Type="Self.Suggestions" Multiplicity="*" />
           <ReferentialConstraint>
@@ -180,7 +180,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Suggestio__hours__398D8EEE">
+        <Association Name="FK__Suggestio__hours__35BCFE0A">
           <End Role="HoursRange" Type="Self.HoursRange" Multiplicity="0..1" />
           <End Role="Suggestions" Type="Self.Suggestions" Multiplicity="*" />
           <ReferentialConstraint>
@@ -215,7 +215,7 @@
           <EntitySet Name="Suggestions" EntityType="Self.Suggestions" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Travelers" EntityType="Self.Travelers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__bookedDat__Sugge__49C3F6B7" Association="Self.FK__bookedDat__Sugge__49C3F6B7">
+          <AssociationSet Name="FK__bookedDat__Sugge__3D5E1FD2" Association="Self.FK__bookedDat__Sugge__3D5E1FD2">
             <End Role="Suggestions" EntitySet="Suggestions" />
             <End Role="bookedDates" EntitySet="bookedDates" />
           </AssociationSet>
@@ -223,27 +223,27 @@
             <End Role="Users" EntitySet="Users" />
             <End Role="Hosts" EntitySet="Hosts" />
           </AssociationSet>
-          <AssociationSet Name="FK__ServiceTy__Servi__3D5E1FD2" Association="Self.FK__ServiceTy__Servi__3D5E1FD2">
+          <AssociationSet Name="FK__ServiceTy__Servi__398D8EEE" Association="Self.FK__ServiceTy__Servi__398D8EEE">
             <End Role="ServiceTypeList" EntitySet="ServiceTypeList" />
             <End Role="ServiceTypesToSuggestions" EntitySet="ServiceTypesToSuggestions" />
           </AssociationSet>
-          <AssociationSet Name="FK__ServiceTy__Sugge__3E52440B" Association="Self.FK__ServiceTy__Sugge__3E52440B">
+          <AssociationSet Name="FK__ServiceTy__Sugge__3A81B327" Association="Self.FK__ServiceTy__Sugge__3A81B327">
             <End Role="Suggestions" EntitySet="Suggestions" />
             <End Role="ServiceTypesToSuggestions" EntitySet="ServiceTypesToSuggestions" />
           </AssociationSet>
-          <AssociationSet Name="FK__Suggestio__Adres__37A5467C" Association="Self.FK__Suggestio__Adres__37A5467C">
+          <AssociationSet Name="FK__Suggestio__Adres__33D4B598" Association="Self.FK__Suggestio__Adres__33D4B598">
             <End Role="Address" EntitySet="Address" />
             <End Role="Suggestions" EntitySet="Suggestions" />
           </AssociationSet>
-          <AssociationSet Name="FK__Suggestio__ageRa__38996AB5" Association="Self.FK__Suggestio__ageRa__38996AB5">
+          <AssociationSet Name="FK__Suggestio__ageRa__34C8D9D1" Association="Self.FK__Suggestio__ageRa__34C8D9D1">
             <End Role="ageRange" EntitySet="ageRange" />
             <End Role="Suggestions" EntitySet="Suggestions" />
           </AssociationSet>
-          <AssociationSet Name="FK__Suggestio__hostI__3A81B327" Association="Self.FK__Suggestio__hostI__3A81B327">
+          <AssociationSet Name="FK__Suggestio__hostI__36B12243" Association="Self.FK__Suggestio__hostI__36B12243">
             <End Role="Hosts" EntitySet="Hosts" />
             <End Role="Suggestions" EntitySet="Suggestions" />
           </AssociationSet>
-          <AssociationSet Name="FK__Suggestio__hours__398D8EEE" Association="Self.FK__Suggestio__hours__398D8EEE">
+          <AssociationSet Name="FK__Suggestio__hours__35BCFE0A" Association="Self.FK__Suggestio__hours__35BCFE0A">
             <End Role="HoursRange" EntitySet="HoursRange" />
             <End Role="Suggestions" EntitySet="Suggestions" />
           </AssociationSet>

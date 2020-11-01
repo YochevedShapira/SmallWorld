@@ -55,28 +55,14 @@
                 </mat-form-field>
             </p>
             <p class="p">
-
                 <mat-label>Range of Age</mat-label>
-                <span>
-                    <mat-checkbox color="primary" (click)="changeRangeAge()"></mat-checkbox>
-                </span>
-
-                <ng5-slider *ngIf="rangeAge" [(value)]="value_age" [(highValue)]="highValue_age"
-                    [options]="options_age"></ng5-slider>
-
+                <ng5-slider [(value)]="value_age" [(highValue)]="highValue_age" [options]="options_age"></ng5-slider>
             </p>
             <p class="p">
-
                 <mat-label>Range of Hours</mat-label>
-                <span>
-                    <mat-checkbox color="primary" (click)="changeRangeHour()"></mat-checkbox>
-                </span>
-                <ng5-slider *ngIf="rangeHour" [(value)]="value_hours" [(highValue)]="highValue_hours"
-                    [options]="options_hours">
+                <ng5-slider [(value)]="value_hours" [(highValue)]="highValue_hours" [options]="options_hours">
                 </ng5-slider>
-
             </p>
-
             <p>
                 <mat-form-field class="form-field">
                     <mat-label> Gender</mat-label>
@@ -96,7 +82,7 @@
                     <mat-icon>add_box</mat-icon>
                 </button>
                 <app-date-picker-list *ngIf="bookedDatesIsValue" (newItemEvent)="addDates($event)"
-                    [bookedDates]=suggestion.bookedDates>
+                    [bookedDates]="suggestion.bookedDates">
                 </app-date-picker-list>
                 <mat-form-field class="form-field" *ngIf="!bookedDatesIsValue">
                     <mat-label>Enter a date range</mat-label>

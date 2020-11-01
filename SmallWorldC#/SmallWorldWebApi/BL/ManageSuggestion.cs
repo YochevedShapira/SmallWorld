@@ -15,7 +15,25 @@ namespace BL
             return Suggestion.ToDTO(DAL.ManageSuggestion.GetSuggestion(id));
         }
 
+        public static List< SuggestionDto> GetSuggestions(int id)
+        {
+            List<SuggestionDto> dto = new List<SuggestionDto>();
+            foreach (var item in DAL.ManageSuggestion.GetSuggestions(id))
+            {
+                dto.Add(Suggestion.ToDTO(item));
+            }
+            return dto;
+        }
 
+        public static List<SuggestionDto> GetSuggestionsAll()
+        {
+            List<SuggestionDto> dto = new List<SuggestionDto>();
+            foreach (var item in DAL.ManageSuggestion.GetSuggestionsAll())
+            {
+                dto.Add(Suggestion.ToDTO(item));
+            }
+            return dto;
+        }
 
 
         public static SuggestionDto SaveSuggestion(SuggestionDto suggestionDto)

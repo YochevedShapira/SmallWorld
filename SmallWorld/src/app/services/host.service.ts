@@ -12,11 +12,7 @@ export class HostService {
 
   constructor(private http: HttpClient, private router: Router) { }
   post(host: Host) {
-    this.http.post(`${environment.apiUrl}/Host`, host).subscribe((h: User) => {
-      localStorage.setItem("currentUser", JSON.stringify(h));
-      console.log("new host::", h);
-      this.router.navigate(['/home']);
-    });
+    return this.http.post(`${environment.apiUrl}/Host`, host)
   }
   put(host: Host) {
     return this.http.put(`${environment.apiUrl}/Host`, host);
@@ -25,6 +21,9 @@ export class HostService {
     return this.http.get(`${environment.apiUrl}/Host`);
   }
   delete(id: number) {
+    return this.http.delete(`${environment.apiUrl}/Host/${id}`);
+  }
+  getId(id: number) {
     return this.http.delete(`${environment.apiUrl}/Host/${id}`);
   }
 }

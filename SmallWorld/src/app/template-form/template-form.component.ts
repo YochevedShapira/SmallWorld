@@ -5,6 +5,8 @@ import { HostService } from '../services/host.service'
 import { Host } from '../models/Host';
 import { Traveler } from '../models/Traveler';
 import { TravelerService } from '../services/traveler.service';
+import { User } from '../models/User';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-template-form',
@@ -22,7 +24,8 @@ export class TemplateFormComponent implements OnInit {
   messageHost = { error: '' };
   selectedIndex = 0;
 
-  constructor(private authService: AuthService, private hostService: HostService, private travelerService: TravelerService) { }
+  constructor(private authService: AuthService, private hostService: HostService, private travelerService: TravelerService,
+    public router: Router) { }
 
   ngOnInit() {
     if (this.status_user == 'traveler')
@@ -89,14 +92,17 @@ export class TemplateFormComponent implements OnInit {
         this.host_to_add.HostPassword = this.form_host.get('password').value;
         this.host_to_add.UserName = this.form_host.get('name').value;
         console.log(this.host_to_add);
-        if (this.status)
-          this.hostService.post(this.host_to_add);
-        else
-          this.hostService.put(this.host_to_add);
+        this.hostService.post(this.host_to_add).subscribe((h: User) => {
+          localStorage.setItem("currentUser", JSON.stringify(h));
+          console.log("new host::", h);
+          this.router.navigate(['/home']);
+        });
+
 
       }
     }
   }
+
   onSubmit_traveler(): void {
     console.log(this.form_traveler.value);
     if (this.form_host.get('name').value != null && this.form_host.get('password').value != null
@@ -108,10 +114,12 @@ export class TemplateFormComponent implements OnInit {
       this.traveler_to_add.BirthDate = this.form_traveler.get('birthDate').value;
       this.traveler_to_add.UserName = this.form_traveler.get('name').value;
       console.log(this.traveler_to_add);
-      if (this.status)
-        this.travelerService.post(this.traveler_to_add);
-      else
-        this.travelerService.put(this.traveler_to_add);
+      this.travelerService.post(this.traveler_to_add).subscribe((t: User) => {
+        localStorage.setItem("currentUser", JSON.stringify(t));
+        console.log("new traveler::", t);
+        this.travelerService.subjectLogin.next(true);
+        this.router.navigate(['/home']);
+      });;
 
     }
     else console.log('hello', (this.form_host.get('name').value != null && this.form_host.get('password').value != null

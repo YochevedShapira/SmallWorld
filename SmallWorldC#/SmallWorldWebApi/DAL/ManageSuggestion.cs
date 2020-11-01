@@ -6,37 +6,53 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
- public static   class ManageSuggestion
+    public static class ManageSuggestion
     {
+        public static YMprojectEntities1 entities = new YMprojectEntities1();
         public static Suggestion GetSuggestion(int id)
         {
             try
             {
-                using (YMprojectEntities1 entities = new YMprojectEntities1())
-                {
-                    Suggestion suggestion = entities.Suggestions.First(s => s.SuggestionID == id);
-                    int trygit = 1;
-                    return suggestion;
-                }
+
+                Suggestion suggestion = entities.Suggestions.First(s => s.SuggestionID == id);
+                int trygit = 1;
+                return suggestion;
+
             }
             catch { return null; }
         }
 
+        public static List<Suggestion> GetSuggestions(int id)
+        {
+            try
+            {
 
+                List<Suggestion> suggestions = entities.Suggestions.Where(s => s.hostId == id).ToList();
+                return suggestions;
+
+            }
+            catch { return null; }
+        }
+
+        public static List<Suggestion> GetSuggestionsAll()
+        {
+            try
+            {
+
+                List<Suggestion> suggestions = entities.Suggestions.ToList();
+                return suggestions;
+
+            }
+            catch { return null; }
+        }
 
 
         public static Suggestion SaveSuggestion(Suggestion suggestion)
         {
             try
             {
-                using (YMprojectEntities1 entities = new YMprojectEntities1())
-                {
-
-
-                    entities.Suggestions.Add(suggestion);
-                    entities.SaveChanges();
-
-                }
+                entities.Suggestions.Add(suggestion);
+                entities.SaveChanges();
                 return suggestion;
             }
             catch (Exception ex)
@@ -49,11 +65,10 @@ namespace DAL
         {
             try
             {
-                using (YMprojectEntities1 entities = new YMprojectEntities1())
-                {
-                    entities.Suggestions.Remove(suggestion);
-                    entities.SaveChanges();
-                }
+
+                entities.Suggestions.Remove(suggestion);
+                entities.SaveChanges();
+
                 return true;
             }
             catch (Exception ex)
@@ -68,17 +83,15 @@ namespace DAL
             try
             {
                 Suggestion ss;
-                using (YMprojectEntities1 entities = new YMprojectEntities1())
-                {
-                  ss  = entities.Suggestions.First(s => s == suggestion);
-                    ss = suggestion;
-                    entities.SaveChanges();
-
-
-                }
+                ss = entities.Suggestions.First(s => s.SuggestionID==suggestion.SuggestionID);
+                ss = suggestion;
+                entities.SaveChanges();
                 return ss;
             }
-            catch { return null; }
+            catch (Exception ex)
+            { 
+                return null;
+            }
         }
     }
 

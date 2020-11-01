@@ -1,41 +1,42 @@
-h1{
-    justify-content: center;
-    text-align: center;
-    margin: auto;
+h1 {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
-p{
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    color: #3f51b5;
+p {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  color: #3f51b5;
 }
-.div{
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    padding: 50px;
+.div {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 50px;
 }
-button{
-outline: none;}
+button {
+  outline: none;
+}
 section {
-    display: table;
-  }
-  
-  .example-label {
-    display: table-cell;
-    font-size: 14px;
-    margin-left: 8px;
-    min-width: 120px;
-  }
-  
-  .example-button-row {
-    display: table-cell;
-    width: 490px;
-  }
-  
-.logout{
-    margin-bottom: 50px;
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.logout {
+  margin-bottom: 50px;
 }
 .example-form-field {
-    width: 200px;
-  }
+  width: 200px;
+}

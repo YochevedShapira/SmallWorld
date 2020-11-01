@@ -1,21 +1,27 @@
 <h1>Hello SmallWorld</h1>
+<div class="ml-5">
+    <button mat-stroked-button color="primary" (click)="req()">
+        <mat-icon>edit</mat-icon> search
+    </button>
+</div>
 <div class="div">
 
-    <button class="logout" *ngIf="authService.token()" mat-flat-button color="primary"
-        (click)="authService.logout()">Logout</button>
-
-    <div *ngFor="let user of users">
-        <span> {{user.HostName}}</span>
-        <button (click)="delete(user.HostID)" mat-icon-button color="primary"
-            aria-label="Example icon button with a home icon">
-            <mat-icon>delete</mat-icon>
-        </button>
-        <mat-form-field class="example-form-field">
-            <mat-label>edit name</mat-label>
-            <input matInput type="text" [(ngModel)]="user.HostName">
-        </mat-form-field>
-        <button (click)="edit(user)" mat-icon-button color="primary" aria-label="Example icon button with a home icon">
-            <mat-icon>edit</mat-icon>
-        </button>
+    <div class="row ml-5 mr-5 mt-1">
+        <mat-card class="example-card col-3 m-3" *ngFor="let item of suggestions">
+            <mat-card-header style="text-align: center;display: block;">
+                <mat-card-title>{{item.Title}}</mat-card-title>
+                <mat-card-subtitle>{{item.Description}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    Address: {{item.Country}} {{item.City}} {{item.Street}}
+                </p>
+            </mat-card-content>
+            <mat-card-actions style="text-align: right;">
+                <button mat-stroked-button color="primary" (click)="detail(item)">
+                    <mat-icon>edit</mat-icon> Details
+                </button>
+            </mat-card-actions>
+        </mat-card>
     </div>
 </div>

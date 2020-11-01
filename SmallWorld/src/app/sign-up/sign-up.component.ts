@@ -74,6 +74,7 @@ export class SignUpComponent implements OnInit {
   }
 
   onSubmit_host(): void {
+    debugger
     console.log(this.form_host.value);
     if (this.form_host.get('name').value && this.form_host.get('password').value
       && this.form_host.get('email').value && this.form_host.get('birthDate').value

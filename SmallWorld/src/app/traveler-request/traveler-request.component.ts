@@ -8,6 +8,7 @@ import { Request } from '../models/Request';
 import { RequestService } from '../services/request.service';
 import { HoursRange } from '../models/HoursRange';
 import { AgeRange } from '../models/AgeRange';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-traveler-request',
@@ -15,8 +16,11 @@ import { AgeRange } from '../models/AgeRange';
   styleUrls: ['./traveler-request.component.scss']
 })
 export class TravelerRequestComponent implements OnInit {
+  suggestions: Suggestion[] = [];
 
-  constructor(private requestService: RequestService, private serviceTypeService: ServiceTypeService) { }
+  constructor(private requestService: RequestService,
+    private serviceTypeService: ServiceTypeService,
+    public router: Router) { }
   ngOnInit() {
     console.log();
     this.serviceTypeService.resetList().subscribe((l: ServiceTypeMapper[]) => { this.toppingList = l; });
@@ -97,8 +101,16 @@ export class TravelerRequestComponent implements OnInit {
       this.new_request.ServicesTypes = this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType });
       console.log(this.toppings.value.map((v: ServiceTypeMapper) => { return v.IdServiceType }));
       console.log("new_traveler_request: ", this.new_request)
-      this.requestService.post(this.new_request).subscribe(x => console.log('request ', x));
+      this.requestService.post(this.new_request).subscribe((x: any) => {
+        this.suggestions = x;
+        localStorage.setItem("result", JSON.stringify(this.suggestions));
+        this.router.navigate(["result"]);
+      });
 
     }
+  }
+
+  detail(sug) {
+
   }
 }

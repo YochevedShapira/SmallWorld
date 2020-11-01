@@ -1,0 +1,27 @@
+<h1 class="mt-4">Your Suggestion</h1>
+<div class="ml-5">
+    <button mat-raised-button color="primary" (click)="add()">
+        <mat-icon>add</mat-icon> Add
+    </button>
+</div>
+<div class="row ml-5 mr-5 mt-1">
+    <mat-card class="example-card col-3 m-3" *ngFor="let item of suggestions">
+        <mat-card-header style="text-align: center;display: block;">
+            <mat-card-title>{{item.Title}}</mat-card-title>
+            <mat-card-subtitle>{{item.Description}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                Address: {{item.Country}} {{item.City}} {{item.Street}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions style="text-align: right;">
+            <button mat-stroked-button color="primary" (click)="edit(item)">
+                <mat-icon >edit</mat-icon> Edit
+            </button>
+            <button mat-stroked-button color="primary">
+                <mat-icon>delete</mat-icon> Delete
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

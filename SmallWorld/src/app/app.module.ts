@@ -38,6 +38,10 @@ import { TemplatePostComponent } from './template-post/template-post.component';
 import { EditPostComponent } from './edit-post/edit-post.component';
 import { DatePickerListComponent } from './date-picker-list/date-picker-list.component';
 import { DatePickerItemComponent } from './date-picker-item/date-picker-item.component';
+import { HomeHostComponent } from './home-host/home-host.component';
+import { RequestResultComponent } from './request-result/request-result.component';
+import { SuggestionDetailsComponent } from './suggestion-details/suggestion-details.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -56,6 +60,9 @@ import { DatePickerItemComponent } from './date-picker-item/date-picker-item.com
     EditPostComponent,
     DatePickerListComponent,
     DatePickerItemComponent,
+    HomeHostComponent,
+    RequestResultComponent,
+    SuggestionDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -82,6 +89,7 @@ import { DatePickerItemComponent } from './date-picker-item/date-picker-item.com
     MatExpansionModule,
     Ng5SliderModule,
     ReactiveFormsModule,
+    MatDialogModule
 
   ],
   providers: [
@@ -91,6 +99,7 @@ import { DatePickerItemComponent } from './date-picker-item/date-picker-item.com
       multi: true
     }
   ],
+  entryComponents:[SuggestionDetailsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment';
 import { User, Status } from '../models/User';
 import { Router } from '@angular/router';
 import { Host } from '../models/Host';
+import { TravelerService } from './traveler.service';
 
 
 @Injectable({
@@ -12,7 +13,8 @@ import { Host } from '../models/Host';
 export class AuthService {
   private key = 'currentUser';
   message = { error: '' };
-  constructor(private http: HttpClient, private router: Router
+  constructor(private http: HttpClient, private router: Router,
+    public travelService: TravelerService
   ) { }
 
   post(host: Host) {
@@ -54,7 +56,12 @@ export class AuthService {
           console.log("travelerrrrrr!!!!!!");
 
         this.message.error = "";
-        this.router.navigate(['/home']);
+        this.travelService.subjectLogin.next(true);
+        if (currentUser.UserStaus == Status.Traveler)
+          this.router.navigate(['/home']);
+        if (currentUser.UserStaus == Status.Host)
+          this.router.navigate(['/home-host']);
+
       },
         (error: any) => {
           this.message.error = "Username or password is incorrect";
@@ -62,6 +69,7 @@ export class AuthService {
   }
   logout() {
     localStorage.removeItem(this.key);
+    this.travelService.subjectLogin.next(false);
     this.router.navigate(['/login']);
   }
   token() {

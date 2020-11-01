@@ -29,6 +29,7 @@ namespace DTO
         public HoursRange RangeHours { get; set; }
         public string Gender { get; set; }
         private List<int> servicesType;
+        public List<string> ServicesTypeName { get; set; }
 
         public List<int> ServicesType
         {
@@ -43,6 +44,6 @@ namespace DTO
         public string City { get; set; }
         public string Street { get; set; }
         public int HostId { get; set; }
-       List<bookedDateDto>bookedDates { get; set; }
+        public List<bookedDateDto> bookedDates { get; set; }
     }
 }

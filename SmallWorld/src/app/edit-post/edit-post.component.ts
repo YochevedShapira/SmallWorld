@@ -12,7 +12,7 @@ export class EditPostComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
   suggestion: Suggestion;
   ngOnInit(): void {
-    this.suggestion = JSON.parse(this.route.snapshot.paramMap.get('data'));
+    this.suggestion = JSON.parse(localStorage.getItem("suggestionEdit"));
     console.log(this.suggestion);
 
   }

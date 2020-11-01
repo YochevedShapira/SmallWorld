@@ -22,5 +22,12 @@ export class SuggestionService {
   delete(id: number) {
     return this.http.delete(`${environment.apiUrl}/Suggestion/${id}`);
   }
+  getAll(id: number) {
+    return this.http.get(`${environment.apiUrl}/Suggestions/${id}`);
+  }
+
+  getAllTravel() {
+    return this.http.get(`${environment.apiUrl}/SuggestionsAll`);
+  }
 
 }

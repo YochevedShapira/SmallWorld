@@ -54,3 +54,17 @@ C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorl
 C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.xml
 C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\Documents\תכנות שנה ב\פרויקט\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.dll.config
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.dll
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DAL.pdb
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DTO.dll
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\DTO.pdb
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.dll
+C:\Users\User\Documents\GitHub\SmallWorld\SmallWorldC#\SmallWorldWebApi\DAL\obj\Debug\DAL.pdb
